@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter1/section1.html" />
+    <link rel="next" href="part1/" />
     
     
 
@@ -100,19 +100,26 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2" data-path="part1/">
+            
+                <a href="part1/">
+            
+                    
+                    1. 关于Markdown
+            
+                </a>
+            
 
+            
+            <ul class="articles">
+                
     
-        
-        <li class="header">Part I</li>
-        
-        
-    
-        <li class="chapter " data-level="2.1" data-path="chapter1/section1.html">
+        <li class="chapter " data-level="1.2.1" data-path="chapter1/section1.html">
             
                 <a href="chapter1/section1.html">
             
                     
-                    1.1 新建Markdown文档
+                    1.1. 新建Markdown文档
             
                 </a>
             
@@ -120,12 +127,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="chapter1/section2.html">
+        <li class="chapter " data-level="1.2.2" data-path="chapter1/section2.html">
             
                 <a href="chapter1/section2.html">
             
                     
-                    1.2 Hello.md
+                    1.2. Hello.md
             
                 </a>
             
@@ -134,18 +141,35 @@
         </li>
     
 
+            </ul>
+            
+        </li>
     
-        
-        <li class="header">Part II</li>
-        
-        
-    
+        <li class="chapter " data-level="1.3" data-path="part2/">
+            
+                <a href="part2/">
+            
+                    
+                    语法
+            
+                </a>
+            
 
+            
+        </li>
     
-        
-        <li class="header">Part III</li>
-        
-        
+        <li class="chapter " data-level="1.4" data-path="part3/">
+            
+                <a href="part3/">
+            
+                    
+                    扩展语法
+            
+                </a>
+            
+
+            
+        </li>
     
 
     
@@ -192,7 +216,49 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="introduction">Introduction</h1>
+                                <h1 id="&#x5173;&#x4E8E;-markdown">&#x5173;&#x4E8E; Markdown</h1>
+<h2 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h2>
+<p><a href="http://zh.wikipedia.org/wiki/Markdown" target="_blank">Wiki: Markdown</a></p>
+<blockquote>
+<p>Markdown &#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x7EA7;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x521B;&#x59CB;&#x4EBA;&#x4E3A;&#x7EA6;&#x7FF0;&#xB7;&#x683C;&#x9C81;&#x4F2F;&#xFF08;John Gruber&#xFF09;&#x3002;&#x5B83;&#x5141;&#x8BB8;&#x4EBA;&#x4EEC;&#x201C;&#x4F7F;&#x7528;&#x6613;&#x8BFB;&#x6613;&#x5199;&#x7684;&#x7EAF;&#x6587;&#x672C;&#x683C;&#x5F0F;&#x7F16;&#x5199;&#x6587;&#x6863;&#xFF0C;&#x7136;&#x540E;&#x8F6C;&#x6362;&#x6210;&#x6709;&#x6548;&#x7684; XHTML&#xFF08;&#x6216;&#x8005; HTML&#xFF09;&#x6587;&#x6863;&#x201D;&#x3002;&#x8FD9;&#x79CD;&#x8BED;&#x8A00;&#x5438;&#x6536;&#x4E86;&#x5F88;&#x591A;&#x5728;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x4E2D;&#x5DF2;&#x6709;&#x7684;&#x7EAF;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x7684;&#x7279;&#x6027;&#x3002;</p>
+</blockquote>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x9009;&#x62E9;-markdown">&#x4E3A;&#x4EC0;&#x4E48;&#x9009;&#x62E9; Markdown</h2>
+<ul>
+<li>&#x5B83;&#x57FA;&#x4E8E;&#x7EAF;&#x6587;&#x672C;&#xFF0C;&#x65B9;&#x4FBF;&#x4FEE;&#x6539;&#x548C;&#x5171;&#x4EAB;&#xFF1B;</li>
+<li>&#x51E0;&#x4E4E;&#x53EF;&#x4EE5;&#x5728;&#x6240;&#x6709;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x7F16;&#x5199;&#xFF1B;</li>
+<li>&#x6709;&#x4F17;&#x591A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4EE5;&#x53CA;&#x5E94;&#x7528;&#x7684;&#x76F8;&#x5173;&#x6269;&#x5C55;&#xFF1B;</li>
+<li>&#x5728; <a href="https://github.com/" target="_blank">GitHub</a> &#x7B49;&#x7F51;&#x7AD9;&#x4E2D;&#x6709;&#x5F88;&#x597D;&#x7684;&#x5E94;&#x7528;&#xFF1B;</li>
+<li>&#x5F88;&#x5BB9;&#x6613;&#x8F6C;&#x6362;&#x4E3A; HTML &#x6587;&#x6863;&#x6216;&#x5176;&#x4ED6;&#x683C;&#x5F0F;&#xFF1B;</li>
+<li>&#x9002;&#x5408;&#x7528;&#x6765;&#x7F16;&#x5199;&#x6587;&#x6863;&#x3001;&#x8BB0;&#x5F55;&#x7B14;&#x8BB0;&#x3001;&#x64B0;&#x5199;&#x6587;&#x7AE0;&#x3002;</li>
+</ul>
+<h2 id="&#x517C;&#x5BB9;-html">&#x517C;&#x5BB9; HTML</h2>
+<p>Markdown &#x5B8C;&#x5168;&#x517C;&#x5BB9; HTML &#x8BED;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728; Markdown &#x6587;&#x6863;&#x4E2D;&#x63D2;&#x5165; HTML &#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+</code></pre>
+<p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x53D8;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x6837;&#x5B50;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th style="text-align:right">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td style="text-align:right">4</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -221,7 +287,7 @@
             
                 
                 
-                <a href="chapter1/section1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1.1 新建Markdown文档">
+                <a href="part1/" class="navigation navigation-next navigation-unique" aria-label="Next page: 1. 关于Markdown">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -232,7 +298,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"1.1 新建Markdown文档","level":"2.1","depth":1,"path":"chapter1/section1.md","ref":"chapter1/section1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-07-01T05:30:25.638Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-01T05:58:05.261Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"1. 关于Markdown","level":"1.2","depth":1,"path":"part1/README.md","ref":"part1/README.md","articles":[{"title":"1.1. 新建Markdown文档","level":"1.2.1","depth":2,"path":"chapter1/section1.md","ref":"chapter1/section1.md","articles":[]},{"title":"1.2. Hello.md","level":"1.2.2","depth":2,"path":"chapter1/section2.md","ref":"chapter1/section2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-07-01T06:11:01.620Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-01T06:13:09.732Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
