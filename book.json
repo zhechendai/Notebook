@@ -4,12 +4,6 @@
     "description": "我的所有学记笔记都将利用Gitbook平台并使用Markdown语言编辑。",
     "language": "zh-hans",
     "gitbook": "3.2.3",
-    "styles": {
-        "website": "./styles/website.css"
-    },
-    "structure": {
-        "readme": "README.md"
-    },
     "links": {
         "sidebar": {
             "个人网站": "https://www.daizhechen.com"
