@@ -12,10 +12,16 @@
     "plugins": [
         "sharing",
         "splitter",
-        "expandable-chapters-small", 
+        "-expandable-chapters-small",
+        "chapter-fold", 
         "anchors",
+        "search-pro",
+        "-copy-code-button",
+        "code",
+        "advanced-emoji",
+        "auto-scroll-table",
 
-        "-github",  
+        "github",  
         "-github-buttons",
         "-donate",
         "-sharing-plus",
@@ -24,7 +30,7 @@
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/Blankj"
+            "url": "https://github.com/zhechendai"
         },
         "github-buttons": {
             "buttons": [{

@@ -1,17 +1,17 @@
 # 简介
 
-我的所有学习笔记都将利用Gitbook平台并使用Markdown语言编辑。
+我的所有学习笔记都将利用Gitbook平台并使用Markdown语言编辑。😊
 
 ## Markdown学习笔记
 
 * [Introduction](Markdown/README.md)
-  * [1. 关于Markdown](Markdown/part1/README.md)
-      * [1.1. 新建Markdown文档](Markdown/chapter1/section1.md)
-      * [1.2. Hello.md](Markdown/chapter1/section2.md)
+* [1. 关于Markdown](Markdown/part1/README.md)
+    * [1.1 新建Markdown文档](Markdown/chapter1/section1.md)
+    * [1.2 Hello.md](Markdown/chapter1/section2.md)
 
-  * [2. 语法](Markdown/part2/README.md)
+* [2. 语法](Markdown/part2/README.md)
 
-  * [3. 扩展语法](Markdown/part3/README.md)
+* [3. 扩展语法](Markdown/part3/README.md)
 
 
 
