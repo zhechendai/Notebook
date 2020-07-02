@@ -1,0 +1,18 @@
+{
+    "title": "DaiZhechen's Studying Notes",
+    "author": "Dai ",
+    "description": "我的所有学记笔记都将利用Gitbook平台并使用Markdown语言编辑。",
+    "language": "en",
+    "gitbook": "2.2.0",
+    "links": {
+        "sidebar": {
+            "个人网站": "https://www.daizhechen.com"
+        }
+    },
+    "plugins": [
+        "splitter",
+        "-expandable-chapters-small",
+        "auto-scroll-table",
+        "katex"
+    ]
+}
