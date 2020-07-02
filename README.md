@@ -22,9 +22,7 @@ $$\int_{-\infty}^\infty e^{-x^2} = \sqrt{\pi}$$
 
 显示结果为
 
-$$
-\int_{-\infty}^\infty e^{-x^2} = \sqrt{\pi}
-$$
+$$\int_{-\infty}^\infty e^{-x^2} = \sqrt{\pi}$$
 
 ---
 
