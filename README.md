@@ -1,7 +1,10 @@
-# INTRO
+INTRO
+====
+
 Hello, there!! Here is my studying NOTES stack, please check it out!
----
-该页面的GitHub地址请点击[这里](https://github.com/zhechendai/Notebook)，欢迎Star 😊
+----
+
+Code on [GitHub](https://github.com/zhechendai/Notebook)，欢迎Star 😊
 
 该Notes利用GitBook，并使用VSCode编辑器搭配Markdown语言编辑。
 
@@ -30,15 +33,18 @@ $$
 
 >该Notes包含以下笔记
 
-### Markdown学习笔记
-* [关于Markdown](part1/intro1.md)
-    - [建一个Markdown文档](ch1/sec1.md)
-    - [Hello.md](ch1/sec2.md)
-* [语法](part2/intro2.md)
-* [扩展语法](part3/intro3.md)
+Markdown学习笔记[*](markdown_study_notes/abstr.html)
+----
+
+* [关于Markdown](markdown_study_notes/part1/intro1.html)
+    - [建一个Markdown文档](markdown_study_notes/ch1/sec1.html)
+    - [Hello.md](markdown_study_notes/ch1/sec2.html)
+* [语法](markdown_study_notes/part2/intro2.html)
+* [扩展语法](markdown_study_notes/part3/intro3.html)
 
 
-### 高等数学学习笔记
+高等数学学习笔记
+----
 
 待更新...
 
