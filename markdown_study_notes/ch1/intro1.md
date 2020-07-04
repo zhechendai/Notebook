@@ -1,6 +1,9 @@
 关于Markdown
 ====
 
+1\. [新建一个Markdown文档](sec1.html)  
+2\. [Hello.md](sec2.html)
+
 介绍
 ----
 
@@ -48,3 +51,4 @@ Markdown完全兼容HTML语法，可以直接在Markdown文档中插入HTML内�
     <td>4</td>
   </tr>
 </table>
+

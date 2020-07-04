@@ -1,12 +1,4 @@
 Hello.md
 ====
 
-Markdown代码如下所示，
-
-```markdown
-[Gitbook](https://www.gitbook.com)is a good place to write.
-```
-Output
-----
-
 [Gitbook](https://www.gitbook.com) is a good place to write.

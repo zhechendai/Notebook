@@ -36,11 +36,27 @@ $$
 Markdown学习笔记[*](markdown_study_notes/abstr.html)
 ----
 
-* [关于Markdown](markdown_study_notes/part1/intro1.html)
+已完结✅
+
+* [关于Markdown](markdown_study_notes/ch1/intro1.html)
     - [建一个Markdown文档](markdown_study_notes/ch1/sec1.html)
     - [Hello.md](markdown_study_notes/ch1/sec2.html)
-* [语法](markdown_study_notes/part2/intro2.html)
-* [扩展语法](markdown_study_notes/part3/intro3.html)
+* [语法](markdown_study_notes/ch2/intro2.html)
+    - [段落与换行](markdown_study_notes/ch2/sec1.html)
+    - [标题](markdown_study_notes/ch2/sec2.html)
+    - [引用](markdown_study_notes/ch2/sec3.html)
+    - [列表](markdown_study_notes/ch2/sec4.html)
+    - [代码](markdown_study_notes/ch2/sec5.html)
+    - [分割线](markdown_study_notes/ch2/sec6.html)
+    - [超链接](markdown_study_notes/ch2/sec7.html)
+    - [图片](markdown_study_notes/ch2/sec8.html)
+    - [强调](markdown_study_notes/ch2/sec9.html)
+    - [字符转义](markdown_study_notes/ch2/sec10.html)
+* [扩展语法](markdown_study_notes/ch3/intro3.html)
+    - [删除线](markdown_study_notes/ch3/sec1.html)
+    - [代码块和语法高亮](markdown_study_notes/ch3/sec2.html)
+    - [表格](markdown_study_notes/ch3/sec3.html)
+    - [Task List](markdown_study_notes/ch3/sec4.html)
 
 
 高等数学学习笔记

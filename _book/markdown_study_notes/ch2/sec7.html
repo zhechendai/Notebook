@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>新建一个Markdown文档 | NotesStack</title>
+        <title>超链接 | NotesStack</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.2.0">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../../markdown_study_notes/ch1/sec2.html" />
+    <link rel="next" href="../../markdown_study_notes/ch2/sec8.html" />
     
     
-    <link rel="prev" href="../../markdown_study_notes/ch1/intro1.html" />
+    <link rel="prev" href="../../markdown_study_notes/ch2/sec6.html" />
     
 
         
@@ -48,7 +48,7 @@
     <body>
         
         
-    <div class="book" data-level="1.1.1" data-basepath="../.." data-revision="Sat Jul 04 2020 17:37:18 GMT+0800 (CST)">
+    <div class="book" data-level="1.2.7" data-basepath="../.." data-revision="Sat Jul 04 2020 17:37:18 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -117,7 +117,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1.1" data-path="markdown_study_notes/ch1/sec1.html">
+        <li class="chapter " data-level="1.1.1" data-path="markdown_study_notes/ch1/sec1.html">
             
                 
                     <a href="../../markdown_study_notes/ch1/sec1.html">
@@ -258,7 +258,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="markdown_study_notes/ch2/sec7.html">
+        <li class="chapter active" data-level="1.2.7" data-path="markdown_study_notes/ch2/sec7.html">
             
                 
                     <a href="../../markdown_study_notes/ch2/sec7.html">
@@ -521,18 +521,52 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AAmarkdown%E6%96%87%E6%A1%A3">&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;Markdown&#x6587;&#x6863;</h1>
-<h2 id="hello-md">Hello.md</h2>
-<p>&#x6253;&#x5F00;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF08;&#x6211;&#x4F7F;&#x7528;&#x7684;&#x662F;VSCode&#xFF09;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&apos;Hello.md&apos;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#xFF1A;</p>
-<pre><code class="lang-markdown"><span class="hljs-header">Hello.md
-====</span>
-
-[<span class="hljs-link_label">Gitbook</span>](<span class="hljs-link_url">https://www.gitbook.com</span>) is a good place to write.
+                        <h1 id="%E8%B6%85%E9%93%BE%E6%8E%A5">&#x8D85;&#x94FE;&#x63A5;</h1>
+<h2 id="%E8%A1%8C%E5%86%85%E5%BC%8F">&#x884C;&#x5185;&#x5F0F;</h2>
+<p>&#x683C;&#x5F0F;&#x4E3A;<code>[link text](URL &apos;title text&apos;)</code></p>
+<p>&#x2460;&#x666E;&#x901A;&#x94FE;&#x63A5;</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">Google</span>](<span class="hljs-link_url">http://www.google.com/</span>)
+</code></pre>
+<p><a href="http://www.google.com/" target="_blank">Google</a></p>
+<p>&#x2461;&#x6307;&#x5411;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x7684;&#x94FE;&#x63A5;</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">icon.png</span>](<span class="hljs-link_url">./images/icon.png</span>)
+</code></pre>
+<p><a href="images/icon.png">icon.png</a></p>
+<p>&#x2462;&#x5305;&#x542B;&apos;title&apos;&#x7684;&#x94FE;&#x63A5;</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">Google</span>](<span class="hljs-link_url">http://www.google.com/ &quot;Google&quot;</span>)
+</code></pre>
+<p><a href="http://www.google.com/" title="Google" target="_blank">Google</a></p>
+<blockquote>
+<p>title&#x4F7F;&#x7528;&apos;&#x6216;&quot;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;</p>
+</blockquote>
+<h2 id="%E5%8F%82%E8%80%83%E5%BC%8F">&#x53C2;&#x8003;&#x5F0F;</h2>
+<p>&#x53C2;&#x8003;&#x5F0F;&#x94FE;&#x63A5;&#x7684;&#x5199;&#x6CD5;&#x76F8;&#x5F53;&#x4E8E;&#x884C;&#x5185;&#x5F0F;&#x62C6;&#x5206;&#x6210;&#x4E24;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;<em>&#x8BC6;&#x522B;&#x7B26;</em>&#x6765;&#x8FDE;&#x63A5;&#x4E24;&#x90E8;&#x5206;&#x3002;&#x53C2;&#x8003;&#x5F0F;&#x80FD;&#x591F;&#x5C3D;&#x91CF;&#x4FDD;&#x6301;&#x6587;&#x7AE0;&#x7684;&#x7ED3;&#x6784;&#x7B80;&#x5355;&#xFF0C;&#x4E5F;&#x65B9;&#x4FBF;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;URL&#x3002;</p>
+<p>&#x2460;&#x5B9A;&#x4E49;&#x94FE;&#x63A5;</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">Google</span>](<span class="hljs-link_url">link</span>)
+</code></pre>
+<p><a href="link">Google</a></p>
+<p>&#x2461;&#x5B9A;&#x4E49;&#x94FE;&#x63A5;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_reference">link</span>]:<span class="hljs-link_url">http://www.google.com/ &quot;Google&quot;</span>
+</code></pre>
+<p>&#x5176;&#x683C;&#x5F0F;&#x4E3A;&#xFF1A;<code>[&#x8BC6;&#x522B;&#x7B26;]&#xFF1A;URL &apos;title&apos;</code>.</p>
+<blockquote>
+<p>&#x5176;&#x4E2D;&#xFF0C;URL&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&lt;&gt;&#x5305;&#x62EC;&#x8D77;&#x6765;&#xFF0C;title&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&quot;&quot;&#x3001;&apos;&apos;&#x3001;()&#x5305;&#x62EC;&#xFF08;&#x8003;&#x8651;&#x5230;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x5F15;&#x53F7;&#xFF09;&#xFF0C;title&#x90E8;&#x5206;&#x4E5F;&#x53EF;&#x4EE5;&#x6362;&#x884C;&#x6765;&#x5199;&#xFF1B;<br>&#x94FE;&#x63A5;&#x7684;&#x5185;&#x5BB9;&#x5B9A;&#x4E49;&#x53EF;&#x4EE5;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;<em>&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;</em>&#x3002;</p>
+</blockquote>
+<p>&#x2462;&#x4E5F;&#x53EF;&#x4EE5;&#x7701;&#x7565;<em>&#x8BC6;&#x522B;&#x7B26;</em>&#xFF0C;&#x4F7F;&#x7528;&#x94FE;&#x63A5;&#x6587;&#x672C;&#x4F5C;&#x4E3A;<em>&#x8BC6;&#x522B;&#x7B26;</em>&#xFF1A;</p>
+<pre><code class="lang-markdown">[<span class="hljs-link_label">Google</span>][<span class="hljs-link_reference"></span>]
+[<span class="hljs-link_reference">Google</span>]:<span class="hljs-link_url">http://www.google.com/ &quot;Google&quot;</span>
 </code></pre>
 <blockquote>
-<p>&apos;.md&apos;&#x548C;&apos;.markdown&apos;&#x90FD;&#x662F;Markdown&#x666E;&#x904D;&#x652F;&#x6301;&#x7684;&#x6269;&#x5C55;&#x540D;&#xFF0C;&apos;.md&apos;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>&#x53C2;&#x8003;&#x5F0F;&#x76F8;&#x5BF9;&#x4E8E;&#x884C;&#x5185;&#x5F0F;&#x6709;&#x4E00;&#x4E2A;&#x660E;&#x663E;&#x7684;&#x4F18;&#x70B9;&#xFF0C;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x5728;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#x5F15;&#x7528;&#x540C;&#x4E00;&#x4E2A;URL&#x3002;</p>
 </blockquote>
-<p>&#x8F6C;&#x5316;&#x4E3A;HTML&#x6587;&#x6863;&#x540E;&#xFF0C;&#x683C;&#x5F0F;&#x5F62;&#x5982;<a href="sec2.html">1.1.2. Hello.md</a></p>
+<h2 id="%E8%87%AA%E5%8A%A8%E9%93%BE%E6%8E%A5">&#x81EA;&#x52A8;&#x94FE;&#x63A5;</h2>
+<p>&#x4F7F;&#x7528;<code>&lt;&gt;</code>&#x5305;&#x62EC;&#x7684;URL&#x6216;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x4E3A;&#x8D85;&#x94FE;&#x63A5;&#xFF1A;</p>
+<pre><code class="lang-markdown"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">http:</span>//<span class="hljs-attribute">www.google.com</span>/&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">123@email.com</span>&gt;</span></span>
+</code></pre>
+<p><a href="http://www.google.com/" target="_blank">http://www.google.com/</a></p>
+<p><a href="mailto:123@email.com" target="_blank">123@email.com</a></p>
+<p>&#x8BE5;&#x65B9;&#x5F0F;&#x9002;&#x5408;&#x884C;&#x5185;&#x8F83;&#x77ED;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;URL&#x4F5C;&#x4E3A;&#x94FE;&#x63A5;&#x6587;&#x672C;&#x3002;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x4F1A;&#x81EA;&#x52A8;&#x7F16;&#x7801;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x6293;&#x53D6;&#x673A;&#x5668;&#x4EBA;&#x3002;</p>
 
                     
                     </section>
@@ -543,10 +577,10 @@
         </div>
 
         
-        <a href="../../markdown_study_notes/ch1/intro1.html" class="navigation navigation-prev " aria-label="Previous page: 关于Markdown"><i class="fa fa-angle-left"></i></a>
+        <a href="../../markdown_study_notes/ch2/sec6.html" class="navigation navigation-prev " aria-label="Previous page: 分割线"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../../markdown_study_notes/ch1/sec2.html" class="navigation navigation-next " aria-label="Next page: Hello.md"><i class="fa fa-angle-right"></i></a>
+        <a href="../../markdown_study_notes/ch2/sec8.html" class="navigation navigation-next " aria-label="Next page: 图片"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
