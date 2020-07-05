@@ -1,3 +1,10 @@
+<!--
+ * @Date: 2020-07-04 17:40:56
+ * @Author: Dai Zhechen
+ * @Github: https://github.com/zhechendai
+ * @LastEditTime: 2020-07-05 21:10:27
+ * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
+--> 
 # Summary
 
 * [INTRODUCTION](README.md)
@@ -22,6 +29,10 @@
        - [代码块和语法高亮](markdown_study_notes/ch3/sec2.md)
        - [表格](markdown_study_notes/ch3/sec3.md)
        - [Task List](markdown_study_notes/ch3/sec4.md)
+
+* [程序设计C语言](c_programming/abstr.md)
+    - [程序设计与C语言](c_programming/week0.md)
+    - [计算](c_programming/week1.md) 
 
 * 高等数学学习笔记
 

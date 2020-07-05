@@ -1,3 +1,10 @@
+<!--
+ * @Date: 2020-07-04 17:40:56
+ * @Author: Dai Zhechen
+ * @Github: https://github.com/zhechendai
+ * @LastEditTime: 2020-07-05 21:12:06
+ * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
+--> 
 INTRO
 ====
 
@@ -58,6 +65,13 @@ Markdown学习笔记[*](markdown_study_notes/abstr.html)
     - [表格](markdown_study_notes/ch3/sec3.html)
     - [Task List](markdown_study_notes/ch3/sec4.html)
 
+程序设计C语言
+----
+
+更新中
+
+* [程序设计与C语言](c_programming/week0.html)
+* [计算](c_programming/week1.html)
 
 高等数学学习笔记
 ----

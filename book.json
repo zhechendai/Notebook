@@ -11,7 +11,7 @@
     },
     "plugins": [
         "splitter",
-        "-expandable-chapters-small",
+        "expandable-chapters-small",
         "auto-scroll-table",
         "katex"
     ]
