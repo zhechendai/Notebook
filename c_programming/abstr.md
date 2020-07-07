@@ -2,7 +2,7 @@
  * @Date: 2020-07-05 17:18:54
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-06 22:49:58
+ * @LastEditTime: 2020-07-07 11:15:00
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 
@@ -14,7 +14,7 @@
 0\. [程序设计与C语言](week0.html)  
 1\. [计算](week1.html)  
 2\. [判断](week2.html)    
-3\. 循环  
+3\. [循环](week3.html)  
 4\. 循环控制  
 5\. 数据类型  
 6\. 函数  
