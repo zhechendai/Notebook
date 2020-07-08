@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-07 11:17:42
+ * @LastEditTime: 2020-07-08 18:33:30
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 INTRO
@@ -74,6 +74,7 @@ Markdown学习笔记[*](markdown_study_notes/abstr.html)
 * [计算](c_programming/week1.html)
 * [判断](c_programming/week2.html)
 * [循环](c_programming/week3.html)
+* [循环控制](c_programming/week4.html)
   
 高等数学学习笔记
 ----
