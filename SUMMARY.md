@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-09 18:04:52
+ * @LastEditTime: 2020-07-10 16:05:16
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 # Summary
@@ -37,6 +37,7 @@
     - [循环](c_programming/week3.md)
     - [循环控制](c_programming/week4.md)
     - [数据类型](c_programming/week5.md)
+    - [函数](c_programming/week6.md)
 
 * 高等数学学习笔记
 
