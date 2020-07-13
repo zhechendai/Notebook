@@ -2,7 +2,7 @@
  * @Date: 2020-07-05 17:18:54
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-12 18:41:46
+ * @LastEditTime: 2020-07-13 17:53:45
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 
@@ -19,4 +19,4 @@
 5\. [数据类型](week5.html)  
 6\. [函数](week6.html)  
 7\. [数组](week7.html)  
-8\. 指针与字符串  
+8\. [指针与字符串](week8.html)   
