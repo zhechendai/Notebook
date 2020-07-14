@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-13 17:54:10
+ * @LastEditTime: 2020-07-14 16:29:26
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 # Summary
@@ -40,6 +40,7 @@
     - [函数](c_programming/week6.md)
     - [数组](c_programming/week7.md)
     - [指针与字符串](c_programming/week8.md)
+    - [指针与字符串2](c_programming/week9.md)
 
 * 高等数学学习笔记
 

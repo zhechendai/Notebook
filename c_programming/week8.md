@@ -2,7 +2,7 @@
  * @Date: 2020-07-13 11:42:15
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-13 17:53:26
+ * @LastEditTime: 2020-07-14 16:25:44
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 
@@ -94,7 +94,7 @@
 
 指针是const
 * 表示一旦得到了某个变量的地址，不能再指向其他变量
-  * int * const q = &i; //q是const
+  * int * const q = &i; //q是const 不同通过p去做修改 
   * *q=26;//OK
   * q++; //ERROR
 
@@ -104,7 +104,8 @@
   * *p=26;//ERROR!(*p)是const
   * i=26;//OK
   * p=&j;//OK
->判断哪个被const了的标志是const在*的前面还是后面
+>判断哪个被const了的标志是const在*的前面还是后面  
+*在const前，所指的东西不能被修改；  *在const后，指针不能被修改
 
 const数组
 * const int a[] = {1,2,3,4,5,6};
@@ -260,7 +261,13 @@ strstr
 * `char * strrchr(const char *s, int c);` // 寻找**从右到左**第一个出现c的位置，返回的是指针
 * 返回NULL表示没有找到
 * ？如何寻找第二个
+```c
+char s[] = "hello";
+char *p= strchr(s, 'l');
+p = strchr(p+1, 'l');
+printf("%s\n", p);
+```
 
 字符串中找字符串
 * `char * strstr(const char *s1, const char *s2);`
-* `char * strcasestr(const char *s1, const char *s2);`
+* `char * strcasestr(const char *s1, const char *s2);`  // 忽略大小写

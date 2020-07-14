@@ -2,7 +2,7 @@
  * @Date: 2020-07-05 17:18:54
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-13 17:53:45
+ * @LastEditTime: 2020-07-14 11:00:53
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 
@@ -20,3 +20,11 @@
 6\. [函数](week6.html)  
 7\. [数组](week7.html)  
 8\. [指针与字符串](week8.html)   
+9\. [指针与字符串2](week9.html)   
+10\. [ACLLib的基本图形函数](week10.html)   
+11\. [结构类型](week11.html)   
+12\. [链表](week12.html)   
+13\. [程序结构](week13.html)   
+14\. [交互图形设计](week14.html)   
+15\. [文件](week15.html)   
+16\. [搜索与排序](week16.html)   
