@@ -41,6 +41,8 @@
         
     
     
+    <link rel="next" href="../c_programming/week9.html" />
+    
     
     <link rel="prev" href="../c_programming/week7.html" />
     
@@ -50,7 +52,7 @@
     <body>
         
         
-    <div class="book" data-level="2.9" data-basepath=".." data-revision="Mon Jul 13 2020 17:55:55 GMT+0800 (CST)">
+    <div class="book" data-level="2.9" data-basepath=".." data-revision="Tue Jul 14 2020 16:33:25 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -562,6 +564,21 @@
             
         </li>
     
+        <li class="chapter " data-level="2.10" data-path="c_programming/week9.html">
+            
+                
+                    <a href="../c_programming/week9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        指针与字符串2
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -683,7 +700,7 @@
  * @Date: 2020-07-13 11:42:15
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-13 17:53:26
+ * @LastEditTime: 2020-07-14 16:25:44
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 <h1 id="%E6%8C%87%E9%92%88%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2">&#x6307;&#x9488;&#x4E0E;&#x5B57;&#x7B26;&#x4E32;</h1>
@@ -810,7 +827,7 @@
 <p>&#x6307;&#x9488;&#x662F;const</p>
 <ul>
 <li>&#x8868;&#x793A;&#x4E00;&#x65E6;&#x5F97;&#x5230;&#x4E86;&#x67D0;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x4E0D;&#x80FD;&#x518D;&#x6307;&#x5411;&#x5176;&#x4ED6;&#x53D8;&#x91CF;<ul>
-<li>int * const q = &amp;i; //q&#x662F;const</li>
+<li>int * const q = &amp;i; //q&#x662F;const &#x4E0D;&#x540C;&#x901A;&#x8FC7;p&#x53BB;&#x505A;&#x4FEE;&#x6539; </li>
 <li>*q=26;//OK</li>
 <li>q++; //ERROR</li>
 </ul>
@@ -823,7 +840,8 @@
 <li><em>p=26;//ERROR!(</em>p)&#x662F;const</li>
 <li>i=26;//OK</li>
 <li>p=&amp;j;//OK<blockquote>
-<p>&#x5224;&#x65AD;&#x54EA;&#x4E2A;&#x88AB;const&#x4E86;&#x7684;&#x6807;&#x5FD7;&#x662F;const&#x5728;*&#x7684;&#x524D;&#x9762;&#x8FD8;&#x662F;&#x540E;&#x9762;</p>
+<p>&#x5224;&#x65AD;&#x54EA;&#x4E2A;&#x88AB;const&#x4E86;&#x7684;&#x6807;&#x5FD7;&#x662F;const&#x5728;<em>&#x7684;&#x524D;&#x9762;&#x8FD8;&#x662F;&#x540E;&#x9762;  
+</em>&#x5728;const&#x524D;&#xFF0C;&#x6240;&#x6307;&#x7684;&#x4E1C;&#x897F;&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;&#xFF1B;  *&#x5728;const&#x540E;&#xFF0C;&#x6307;&#x9488;&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;</p>
 </blockquote>
 </li>
 </ul>
@@ -1032,12 +1050,17 @@
 <li><code>char * strchr(const char *s, int c);</code> // &#x5BFB;&#x627E;<strong>&#x4ECE;&#x5DE6;&#x5230;&#x53F3;</strong>&#x7B2C;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;c&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x6307;&#x9488;</li>
 <li><code>char * strrchr(const char *s, int c);</code> // &#x5BFB;&#x627E;<strong>&#x4ECE;&#x53F3;&#x5230;&#x5DE6;</strong>&#x7B2C;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;c&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x6307;&#x9488;</li>
 <li>&#x8FD4;&#x56DE;NULL&#x8868;&#x793A;&#x6CA1;&#x6709;&#x627E;&#x5230;</li>
-<li>&#xFF1F;&#x5982;&#x4F55;&#x5BFB;&#x627E;&#x7B2C;&#x4E8C;&#x4E2A;</li>
+<li>&#xFF1F;&#x5982;&#x4F55;&#x5BFB;&#x627E;&#x7B2C;&#x4E8C;&#x4E2A;<pre><code class="lang-c"><span class="hljs-keyword">char</span> s[] = <span class="hljs-string">&quot;hello&quot;</span>;
+<span class="hljs-keyword">char</span> *p= <span class="hljs-built_in">strchr</span>(s, <span class="hljs-string">&apos;l&apos;</span>);
+p = <span class="hljs-built_in">strchr</span>(p+<span class="hljs-number">1</span>, <span class="hljs-string">&apos;l&apos;</span>);
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s\n&quot;</span>, p);
+</code></pre>
+</li>
 </ul>
 <p>&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x627E;&#x5B57;&#x7B26;&#x4E32;</p>
 <ul>
 <li><code>char * strstr(const char *s1, const char *s2);</code></li>
-<li><code>char * strcasestr(const char *s1, const char *s2);</code></li>
+<li><code>char * strcasestr(const char *s1, const char *s2);</code>  // &#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;</li>
 </ul>
 
                     
@@ -1049,8 +1072,10 @@
         </div>
 
         
-        <a href="../c_programming/week7.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 数组"><i class="fa fa-angle-left"></i></a>
+        <a href="../c_programming/week7.html" class="navigation navigation-prev " aria-label="Previous page: 数组"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="../c_programming/week9.html" class="navigation navigation-next " aria-label="Next page: 指针与字符串2"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
