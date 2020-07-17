@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-16 16:03:37
+ * @LastEditTime: 2020-07-17 14:44:54
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 # Summary
@@ -43,6 +43,7 @@
     - [指针与字符串2](c_programming/week9.md)
     - [ACLLib的基本图形函数](c_programming/week10.md)
     - [结构类型](c_programming/week11.md)
+    - [链表](c_programming/week12.md)
 
 * [数据结构](data_structure/abstr.md)
     - [基本概念](data_structure/ch1.md) 
