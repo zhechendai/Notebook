@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-17 14:44:35
+ * @LastEditTime: 2020-07-18 18:00:32
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 INTRO
@@ -83,6 +83,7 @@ Markdown学习笔记[*](markdown_study_notes/abstr.html)
 * [ACLLib的基本图形函数](c_programming/week10.html)
 * [结构类型](c_programming/week11.html)
 * [链表](c_programming/week12.html)
+* [程序结构](c_programming/week13.html)
 
 
 数据结构
@@ -91,6 +92,7 @@ Markdown学习笔记[*](markdown_study_notes/abstr.html)
 更新中
 
 * [基本概念](data_structure/ch1.html)
+* [线性结构](data_structure/ch2.html)
   
 高等数学学习笔记
 ----
