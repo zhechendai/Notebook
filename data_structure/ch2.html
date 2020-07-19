@@ -50,7 +50,7 @@
     <body>
         
         
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="Sat Jul 18 2020 18:04:32 GMT+0800 (CST)">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="Sun Jul 19 2020 21:04:14 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -637,6 +637,21 @@
             
         </li>
     
+        <li class="chapter " data-level="2.15" data-path="c_programming/week14.html">
+            
+                
+                    <a href="../c_programming/week14.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        交互图形设计
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -809,19 +824,19 @@
  * @Date: 2020-07-17 14:47:05
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-17 16:52:41
+ * @LastEditTime: 2020-07-19 21:03:23
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 <h1 id="%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84">&#x7EBF;&#x6027;&#x7ED3;&#x6784;</h1>
 <h2 id="%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%AE%9E%E7%8E%B0">&#x7EBF;&#x6027;&#x8868;&#x53CA;&#x5176;&#x5B9E;&#x73B0;</h2>
-<h3 id="%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E8%A1%A8">&#x4EC0;&#x4E48;&#x662F;&#x7EBF;&#x6027;&#x8868;</h3>
+<h4 id="%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E6%80%A7%E8%A1%A8">&#x4EC0;&#x4E48;&#x662F;&#x7EBF;&#x6027;&#x8868;</h4>
 <p>&#x201C;&#x7EBF;&#x6027;&#x8868;&#x201D;&#xFF1A;&#x7531;<strong>&#x540C;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x5143;&#x7D20;</strong>&#x6784;&#x6210;&#x6709;&#x5E8F;&#x5E8F;&#x5217;&#x7684;&#x7EBF;&#x6027;&#x7ED3;&#x6784;</p>
 <ul>
 <li>&#x8868;&#x4E2D;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x79F0;&#x4E3A;&#x7EBF;&#x6027;&#x8868;&#x7684;<strong>&#x957F;&#x5EA6;</strong></li>
 <li>&#x7EBF;&#x6027;&#x8868;&#x6CA1;&#x6709;&#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x79F0;&#x4E3A;<strong>&#x7A7A;&#x8868;</strong></li>
 <li>&#x8868;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x79F0;&#x4E3A;<strong>&#x8868;&#x5934;</strong>&#xFF0C;&#x8868;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x79F0;<strong>&#x8868;&#x5C3E;</strong></li>
 </ul>
-<h3 id="%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%8F%8F%E8%BF%B0">&#x7EBF;&#x6027;&#x8868;&#x7684;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x63CF;&#x8FF0;</h3>
+<h4 id="%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%8F%8F%E8%BF%B0">&#x7EBF;&#x6027;&#x8868;&#x7684;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x63CF;&#x8FF0;</h4>
 <ul>
 <li>&#x7C7B;&#x578B;&#x540D;&#x79F0;&#xFF1A;&#x7EBF;&#x6027;&#x8868;&#xFF08;List&#xFF09;</li>
 <li>&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x96C6;&#xFF1A;&#x7EBF;&#x6027;&#x8868;&#x662F; n (&#x2265;0) &#x4E2A;&#x5143;&#x7D20;&#x6784;&#x6210;&#x7684;<strong>&#x6709;&#x5E8F;&#x5E8F;&#x5217;</strong>&#xFF08;a<sub>1</sub>, a<sub>2</sub>, ...,a<sub>n</sub>)</li>
@@ -836,8 +851,740 @@
 </ul>
 </li>
 </ul>
-<h3 id="%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%82%A8%E5%AD%98%E6%96%B9%E6%B3%95">&#x7EBF;&#x6027;&#x8868;&#x50A8;&#x5B58;&#x65B9;&#x6CD5;</h3>
-<h4 id="1-%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%82%A8%E5%AD%98%E5%AE%9E%E7%8E%B0">1. &#x7EBF;&#x6027;&#x8868;&#x7684;&#x987A;&#x5E8F;&#x50A8;&#x5B58;&#x5B9E;&#x73B0;</h4>
+<h4 id="%E7%BA%BF%E6%80%A7%E8%A1%A8%E5%82%A8%E5%AD%98%E6%96%B9%E6%B3%95">&#x7EBF;&#x6027;&#x8868;&#x50A8;&#x5B58;&#x65B9;&#x6CD5;</h4>
+<h4 id="%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%82%A8%E5%AD%98%E5%AE%9E%E7%8E%B0">&#x7EBF;&#x6027;&#x8868;&#x7684;&#x987A;&#x5E8F;&#x50A8;&#x5B58;&#x5B9E;&#x73B0;</h4>
+<ul>
+<li>&#x5229;&#x7528;&#x6570;&#x7EC4;&#x7684;&#x8FDE;&#x7EED;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x987A;&#x5E8F;&#x5B58;&#x653E;&#x7EBF;&#x6027;&#x8868;&#x7684;&#x5404;&#x5143;&#x7D20;</li>
+<li>&#x6CE8;&#xFF1A;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E2D;&#x662F;&#x5E8F;&#x53F7;&#x662F;&#x4E0B;&#x6807;&#xFF0C;&#x4ECE; 0 &#x5F00;&#x59CB;</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;malloc.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> MAXSIZE 100  <span class="hljs-comment">// MAXSIZE &#x5B9A;&#x4E49;&#x4E3A; Data &#x6570;&#x7EC4;&#x7684;&#x5927;&#x5C0F;</span></span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> ElementType;  <span class="hljs-comment">// ElementType &#x53EF;&#x5B9A;&#x4E49;&#x4E3A;&#x4EFB;&#x610F;&#x7C7B;&#x578B;</span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> LNode *List; 
+<span class="hljs-keyword">struct</span> LNode{
+   ElementType Data[MAXSIZE]; 
+   <span class="hljs-keyword">int</span> Last;  <span class="hljs-comment">// Last &#x5B9A;&#x4E49;&#x7EBF;&#x6027;&#x8868;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</span>
+};
+List L;
+<span class="hljs-comment">//&#x8BBF;&#x95EE;&#x4E0B;&#x6807;&#x4E3A; i &#x7684;&#x5143;&#x7D20;&#xFF1A;L-&gt;Data[i]</span>
+<span class="hljs-comment">//&#x7EBF;&#x6027;&#x8868;&#x7684;&#x957F;&#x5EA6;&#xFF1A;L-&gt;Last+1</span>
+
+<span class="hljs-comment">//&#x521D;&#x59CB;&#x5316;&#x987A;&#x5E8F;&#x8868;</span>
+<span class="hljs-function">List <span class="hljs-title">MakeEmpty</span><span class="hljs-params">()</span></span>;  
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Find</span><span class="hljs-params">(ElementType X,List L)</span></span>; <span class="hljs-comment">//&#x67E5;&#x627E; X &#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x4E0B;&#x6807; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Insert</span><span class="hljs-params">(ElementType X,<span class="hljs-keyword">int</span> i,List L)</span></span>; <span class="hljs-comment">//&#x5728;&#x4E0B;&#x6807;&#x4E3A; i &#x7684;&#x5730;&#x65B9;&#x63D2;&#x5165; X </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Delete</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i,List L)</span></span>;   <span class="hljs-comment">//&#x5220;&#x9664;&#x4E0B;&#x6807;&#x4E3A; i &#x7684;&#x5F53;&#x524D;&#x503C; </span>
+<span class="hljs-function">ElementType <span class="hljs-title">FindKth</span><span class="hljs-params">(<span class="hljs-keyword">int</span> K,List L)</span></span>;  <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x4E0B;&#x6807;&#x4E3A; K &#x7684;&#x5F53;&#x524D;&#x503C;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Length</span><span class="hljs-params">(List L)</span></span>;  <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x987A;&#x5E8F;&#x8868;&#x7684;&#x957F;&#x5EA6; </span>
+
+<span class="hljs-comment">//&#x521D;&#x59CB;&#x5316; </span>
+<span class="hljs-function">List <span class="hljs-title">MakeEmpty</span><span class="hljs-params">()</span></span>{
+    List L;
+    L = (List)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> LNode));
+    L-&gt;Last = -<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">return</span> L;
+}
+
+<span class="hljs-comment">// &#x6309;&#x503C;&#x67E5;&#x627E; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Find</span><span class="hljs-params">(ElementType X,List L)</span></span>{
+    <span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(i &lt;= L-&gt;Last &amp;&amp; L-&gt;Data[i] != X)  
+        i++;
+    <span class="hljs-keyword">if</span>(L-&gt;Last &lt; i)  <span class="hljs-comment">//&#x5982;&#x679C;&#x6CA1;&#x627E;&#x5230;&#xFF0C;&#x8FD4;&#x56DE; -1</span>
+        <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>; 
+    <span class="hljs-keyword">else</span>    <span class="hljs-comment">// &#x627E;&#x5230;&#x540E;&#x8FD4;&#x56DE;&#x4E0B;&#x6807; </span>
+        <span class="hljs-keyword">return</span> i;
+}
+
+<span class="hljs-comment">// &#x63D2;&#x5165;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Insert</span><span class="hljs-params">(ElementType X,<span class="hljs-keyword">int</span> i,List L)</span></span>{
+    <span class="hljs-keyword">int</span> j;
+    <span class="hljs-keyword">if</span>(L-&gt;Last == MAXSIZE-<span class="hljs-number">1</span>){  <span class="hljs-comment">//&#x4F4D;&#x7F6E;&#x5DF2;&#x6EE1; </span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x8868;&#x6EE1;&quot;</span>);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">if</span>(i &lt; <span class="hljs-number">0</span> || L-&gt;Last+<span class="hljs-number">1</span> &lt; i){  <span class="hljs-comment">//&#x4F4D;&#x7F6E;&#x8D8A;&#x754C;&#xFF0C;&#x5982;&#x679C;&#x5C06;&#x6570;&#x63D2;&#x5165; L-&gt;Data[L-&gt;Last+1]&#xFF0C;&#x4E0B;&#x9762;&#x90FD;&#x4E0D;&#x7528;&#x817E;&#x4F4D;&#x7F6E;&#x4E86; </span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x4F4D;&#x7F6E;&#x4E0D;&#x5408;&#x6CD5;&quot;</span>);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">for</span>(j=L-&gt;Last;j&gt;=i;j--)   <span class="hljs-comment">// &#x4ECE;&#x540E;&#x5F80;&#x524D;&#x4F9D;&#x6B21;&#x5411;&#x540E;&#x632A;&#x4E00;&#x4E2A;&#xFF0C;&#x7ED9; a[i]&#x817E;&#x51FA;&#x4F4D;&#x7F6E;     </span>
+        L-&gt;Data[j+<span class="hljs-number">1</span>] = L-&gt;Data[j];   
+    L-&gt;Data[i] = X;    <span class="hljs-comment">//&#x65B0;&#x5143;&#x7D20;&#x63D2;&#x5165;</span>
+    L-&gt;Last++;    <span class="hljs-comment">// Last&#x4ECD;&#x7136;&#x6307;&#x5411;&#x6700;&#x540E;&#x5143;&#x7D20;</span>
+    <span class="hljs-keyword">return</span>;
+} 
+
+<span class="hljs-comment">//&#x5220;&#x9664;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Delete</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i,List L)</span></span>{
+    <span class="hljs-keyword">int</span> j;
+    <span class="hljs-keyword">if</span>(i &lt; <span class="hljs-number">0</span> || L-&gt;Last &lt;i){  <span class="hljs-comment">//&#x4F4D;&#x7F6E;&#x8D8A;&#x754C;&#xFF0C;&#x800C;&#x5220;&#x9664;&#x6700;&#x591A;&#x5230; L-&gt;Data[L-&gt;Last]</span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;L-&gt;Data[%d]&#x4E0D;&#x5B58;&#x5728;&#x5143;&#x7D20;&quot;</span>,i);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">for</span>(j=i;j&lt;=L-&gt;Last;j++)   <span class="hljs-comment">// &#x4ECE;&#x524D;&#x5F80;&#x540E;&#x4F9D;&#x6B21;&#x5411;&#x524D;&#x632A;&#x4E00;&#x4E2A;&#xFF0C;&#x5C06; a[i] &#x8986;&#x76D6;&#x4E86; </span>
+        L-&gt;Data[j-<span class="hljs-number">1</span>] = L-&gt;Data[j];
+    L-&gt;Last--;  <span class="hljs-comment">// Last&#x4ECD;&#x7136;&#x6307;&#x5411;&#x6700;&#x540E;&#x5143;&#x7D20;</span>
+    <span class="hljs-keyword">return</span>;
+}
+
+<span class="hljs-comment">// &#x6309;&#x5E8F;&#x67E5;&#x627E;</span>
+<span class="hljs-function">ElementType <span class="hljs-title">FindKth</span><span class="hljs-params">(<span class="hljs-keyword">int</span> K,List L)</span></span>{
+    <span class="hljs-keyword">if</span>(K &lt; <span class="hljs-number">0</span> || L-&gt;Last &lt; K){  <span class="hljs-comment">//&#x4F4D;&#x7F6E;&#x8D8A;&#x754C;</span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;L-&gt;Data[%d]&#x4E0D;&#x5B58;&#x5728;&#x5143;&#x7D20;&quot;</span>,K);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">return</span> L-&gt;Data[K];
+}
+
+<span class="hljs-comment">//&#x8868;&#x957F;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Length</span><span class="hljs-params">(List L)</span></span>{
+    <span class="hljs-keyword">return</span> L-&gt;Last+<span class="hljs-number">1</span>;
+} 
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;
+    L = MakeEmpty();
+    Insert(<span class="hljs-number">11</span>,<span class="hljs-number">0</span>,L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5728;&#x7EBF;&#x6027;&#x8868;L-Data[0]&#x63D2;&#x5165;11\n&quot;</span>);
+    Insert(<span class="hljs-number">25</span>,<span class="hljs-number">0</span>,L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5728;&#x7EBF;&#x6027;&#x8868;L-Data[0]&#x63D2;&#x5165;25\n&quot;</span>);
+    Insert(<span class="hljs-number">33</span>,<span class="hljs-number">0</span>,L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5728;&#x7EBF;&#x6027;&#x8868;L-Data[0]&#x63D2;&#x5165;33\n&quot;</span>);
+    Insert(<span class="hljs-number">77</span>,<span class="hljs-number">0</span>,L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5728;&#x7EBF;&#x6027;&#x8868;L-Data[0]&#x63D2;&#x5165;77\n&quot;</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x6B64;&#x65F6;&#x7684;&#x7EBF;&#x6027;&#x8868;&#x4E3A;&#xFF1A;&quot;</span>); 
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;Length(L);i++)
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,L-&gt;Data[i]);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;\n&quot;</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x67E5;&#x627E;&#x503C;&#x4E3A;12&#x7684;&#x4E0B;&#x6807;&#x662F;&#xFF1A;%d\n&quot;</span>,Find(<span class="hljs-number">12</span>,L));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x4E0B;&#x6807;&#x4E3A;3&#x7684;&#x7EBF;&#x6027;&#x8868;&#x7684;&#x503C;&#x662F;&#xFF1A;%d\n&quot;</span>,FindKth(<span class="hljs-number">3</span>,L));
+    Delete(<span class="hljs-number">2</span>,L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5220;&#x9664;&#x7EBF;&#x6027;&#x8868;&#x4E2D;&#x4E0B;&#x6807;&#x4E3A;2&#x7684;&#x5143;&#x7D20;\n&quot;</span>);
+    Delete(<span class="hljs-number">2</span>,L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5220;&#x9664;&#x7EBF;&#x6027;&#x8868;&#x4E2D;&#x4E0B;&#x6807;&#x4E3A;2&#x7684;&#x5143;&#x7D20;\n&quot;</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x6B64;&#x65F6;&#x7684;&#x7EBF;&#x6027;&#x8868;&#x4E3A;&#xFF1A;&quot;</span>); 
+    <span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;Length(L);i++)
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d &quot;</span>,L-&gt;Data[i]);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;\n&quot;</span>); 
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%93%BE%E8%A1%A8%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0">&#x7EBF;&#x6027;&#x8868;&#x7684;&#x94FE;&#x8868;&#x5B58;&#x50A8;&#x5B9E;&#x73B0;</h4>
+<ul>
+<li>&#x4E0D;&#x8981;&#x6C42;&#x903B;&#x8F91;&#x4E0A;&#x76F8;&#x90BB;&#x7684;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x7269;&#x7406;&#x4E0A;&#x4E5F;&#x76F8;&#x90BB;&#xFF0C;&#x901A;&#x8FC7;&quot;&#x94FE;&quot;&#x5EFA;&#x7ACB;&#x8D77;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x7684;&#x903B;&#x8F91;&#x5173;&#x7CFB;<ul>
+<li>&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x79FB;&#x52A8;&#x6570;&#x636E;&#x5143;&#x7D20;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4FEE;&#x6539;&quot;&#x94FE;&quot;</li>
+</ul>
+</li>
+<li>&#x6CE8;&#xFF1A;&#x94FE;&#x8868;&#x5B58;&#x50A8;&#x4E2D;&#x5E8F;&#x53F7;&#x4ECE; 1 &#x5F00;&#x59CB;</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;malloc.h&gt;</span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> ElementType; <span class="hljs-comment">// ElementType &#x53EF;&#x5B9A;&#x4E49;&#x4E3A;&#x4EFB;&#x610F;&#x7C7B;&#x578B;</span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> LNode *List;
+<span class="hljs-keyword">struct</span> LNode{
+    ElementType Data;   <span class="hljs-comment">//&#x6570;&#x636E;&#x57DF; </span>
+    List Next;   <span class="hljs-comment">// &#x4E0B;&#x4E00;&#x4E2A;&#x94FE;&#x8868;&#x7684;&#x5730;&#x5740; </span>
+}; 
+List L;
+
+<span class="hljs-function">List <span class="hljs-title">MakeEmpty</span><span class="hljs-params">()</span></span>; <span class="hljs-comment">//&#x521D;&#x59CB;&#x5316;&#x94FE;&#x8868; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Length</span><span class="hljs-params">(List L)</span></span>;  <span class="hljs-comment">// &#x4EE5;&#x904D;&#x5386;&#x94FE;&#x8868;&#x7684;&#x65B9;&#x6CD5;&#x6C42;&#x94FE;&#x8868;&#x957F;&#x5EA6; </span>
+<span class="hljs-function">List <span class="hljs-title">FindKth</span><span class="hljs-params">(<span class="hljs-keyword">int</span> K,List L)</span></span>;  <span class="hljs-comment">// &#x6309;&#x5E8F;&#x53F7;&#x67E5;&#x627E; </span>
+<span class="hljs-function">List <span class="hljs-title">Find</span><span class="hljs-params">(ElementType X,List L)</span></span>;  <span class="hljs-comment">// &#x6309;&#x503C;&#x67E5;&#x627E; </span>
+<span class="hljs-function">List <span class="hljs-title">Insert</span><span class="hljs-params">(ElementType X,<span class="hljs-keyword">int</span> i,List L)</span></span>;  <span class="hljs-comment">//&#x5C06; X &#x63D2;&#x5165;&#x5230;&#x7B2C; i-1(i&gt;0) &#x4E2A;&#x7ED3;&#x70B9;&#x4E4B;&#x540E; </span>
+<span class="hljs-function">List <span class="hljs-title">Delete</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i,List L)</span></span>; <span class="hljs-comment">// &#x5220;&#x9664;&#x7B2C; i(i&gt;0) &#x4E2A;&#x7ED3;&#x70B9; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Print</span><span class="hljs-params">(List L)</span></span>; <span class="hljs-comment">// &#x8F93;&#x51FA;&#x94FE;&#x8868;&#x5143;&#x7D20; </span>
+
+<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x94FE;&#x8868; </span>
+<span class="hljs-function">List <span class="hljs-title">MakeEmpty</span><span class="hljs-params">()</span></span>{
+    List L = (List)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> LNode));
+    L = NULL;
+    <span class="hljs-keyword">return</span> L;
+}
+
+<span class="hljs-comment">//&#x6C42;&#x8868;&#x957F; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Length</span><span class="hljs-params">(List L)</span></span>{
+    List p = L;
+    <span class="hljs-keyword">int</span> len=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(p){  <span class="hljs-comment">// &#x5F53; p &#x4E0D;&#x4E3A;&#x7A7A; </span>
+        p = p-&gt;Next;
+        len++;
+    }
+    <span class="hljs-keyword">return</span> len;
+} 
+
+<span class="hljs-comment">// &#x6309;&#x5E8F;&#x67E5;&#x627E; </span>
+<span class="hljs-function">List <span class="hljs-title">FindKth</span><span class="hljs-params">(<span class="hljs-keyword">int</span> K,List L)</span></span>{
+    List p = L;
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>;  <span class="hljs-comment">//&#x4ECE; 1 &#x5F00;&#x59CB; </span>
+    <span class="hljs-keyword">while</span>(p &amp;&amp; i&lt;K){
+        p = p-&gt;Next;
+        i++;
+    }
+    <span class="hljs-keyword">if</span>(i == K)    <span class="hljs-comment">// &#x627E;&#x5230;&#x4E86; </span>
+        <span class="hljs-keyword">return</span> p;
+    <span class="hljs-keyword">else</span>    <span class="hljs-comment">// &#x672A;&#x627E;&#x5230; </span>
+        <span class="hljs-keyword">return</span> NULL;
+} 
+
+<span class="hljs-comment">// &#x6309;&#x503C;&#x67E5;&#x627E;  </span>
+<span class="hljs-function">List <span class="hljs-title">Find</span><span class="hljs-params">(ElementType X,List L)</span></span>{
+    List p = L;
+    <span class="hljs-keyword">while</span>(p &amp;&amp; p-&gt;Data!=X)
+        p = p-&gt;Next;
+    <span class="hljs-comment">// &#x627E;&#x5230;&#x4E86;&#xFF0C;&#x8FD4;&#x56DE; p</span>
+    <span class="hljs-comment">// &#x672A;&#x627E;&#x5230;&#xFF0C;&#x8FD4;&#x56DE; NULL&#xFF0C;&#x6B64;&#x65F6; p &#x7B49;&#x4E8E; NULL </span>
+    <span class="hljs-keyword">return</span> p;   
+} 
+
+<span class="hljs-comment">/* &#x63D2;&#x5165;
+1. &#x7528; s &#x6307;&#x5411;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7ED3;&#x70B9;
+2. &#x7528; p &#x6307;&#x5411;&#x94FE;&#x8868;&#x7684;&#x7B2C; i-1 &#x4E2A;&#x7ED3;&#x70B9; 
+3. s-&gt;Next = p-&gt;Next&#xFF0C;&#x5C06; s &#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#x6307;&#x5411; p &#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9; 
+4. p-&gt;Next = s&#xFF0C;&#x5C06; p &#x7684;&#x4E0B;&#x4E00;&#x7ED3;&#x70B9;&#x6539;&#x4E3A; s   */</span>
+<span class="hljs-function">List <span class="hljs-title">Insert</span><span class="hljs-params">(ElementType X,<span class="hljs-keyword">int</span> i,List L)</span></span>{
+    List p,s;
+    <span class="hljs-keyword">if</span>(i == <span class="hljs-number">1</span>){     <span class="hljs-comment">// &#x65B0;&#x7ED3;&#x70B9;&#x63D2;&#x5165;&#x5728;&#x8868;&#x5934; </span>
+        s = (List)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> LNode));
+        s-&gt;Data = X;
+        s-&gt;Next = L;
+        <span class="hljs-keyword">return</span> s;     <span class="hljs-comment">//&#x63D2;&#x5165;&#x7684;&#x7ED3;&#x70B9;&#x4E3A;&#x5934;&#x7ED3;&#x70B9; </span>
+    }
+    p = FindKth(i-<span class="hljs-number">1</span>,L);   <span class="hljs-comment">// &#x627E;&#x5230;&#x7B2C; i-1 &#x4E2A;&#x7ED3;&#x70B9;</span>
+    <span class="hljs-keyword">if</span>(!p){   <span class="hljs-comment">// &#x7B2C; i-1 &#x4E2A;&#x7ED3;&#x70B9;&#x4E0D;&#x5B58;&#x5728; </span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x7ED3;&#x70B9;&#x9519;&#x8BEF;&quot;</span>);
+        <span class="hljs-keyword">return</span> NULL;
+    }<span class="hljs-keyword">else</span>{
+        s = (List)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> LNode));
+        s-&gt;Data = X;
+        s-&gt;Next = p-&gt;Next;   <span class="hljs-comment">//&#x5C06; s &#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#x6307;&#x5411; p &#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9; </span>
+        p-&gt;Next = s;   <span class="hljs-comment">// &#x5C06; p &#x7684;&#x4E0B;&#x4E00;&#x7ED3;&#x70B9;&#x6539;&#x4E3A; s</span>
+        <span class="hljs-keyword">return</span> L;
+    }
+}
+
+<span class="hljs-comment">/* &#x5220;&#x9664;
+1. &#x7528; p &#x6307;&#x5411;&#x94FE;&#x8868;&#x7684;&#x7B2C; i-1 &#x4E2A;&#x7ED3;&#x70B9; 
+2. &#x7528; s &#x6307;&#x5411;&#x8981;&#x88AB;&#x5220;&#x9664;&#x7684;&#x7684;&#x7B2C; i &#x4E2A;&#x7ED3;&#x70B9;
+3. p-&gt;Next = s-&gt;Next&#xFF0C;p &#x6307;&#x9488;&#x6307;&#x5411; s &#x540E;&#x9762;
+4. free(s)&#xFF0C;&#x91CA;&#x653E;&#x7A7A;&#x95F4; 
+*/</span>
+<span class="hljs-function">List <span class="hljs-title">Delete</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i,List L)</span></span>{
+    List p,s;
+    <span class="hljs-keyword">if</span>(i==<span class="hljs-number">1</span>){   <span class="hljs-comment">//&#x5982;&#x679C;&#x8981;&#x5220;&#x9664;&#x5934;&#x7ED3;&#x70B9; </span>
+        s = L;
+        <span class="hljs-keyword">if</span>(L)   <span class="hljs-comment">// &#x5982;&#x679C;&#x4E0D;&#x4E3A;&#x7A7A; </span>
+            L = L-&gt;Next;
+        <span class="hljs-keyword">else</span>
+            <span class="hljs-keyword">return</span> NULL;
+        <span class="hljs-built_in">free</span>(s);   <span class="hljs-comment">// &#x91CA;&#x653E;&#x88AB;&#x5220;&#x9664;&#x7ED3;&#x70B9; </span>
+        <span class="hljs-keyword">return</span> L; 
+    }
+    p = FindKth(i-<span class="hljs-number">1</span>,L);    <span class="hljs-comment">// &#x67E5;&#x627E;&#x7B2C; i-1 &#x4E2A;&#x7ED3;&#x70B9;</span>
+    <span class="hljs-keyword">if</span>(!p || !(p-&gt;Next)){     <span class="hljs-comment">// &#x7B2C; i-1 &#x4E2A;&#x6216;&#x7B2C; i &#x4E2A;&#x7ED3;&#x70B9;&#x4E0D;&#x5B58;&#x5728; </span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x7ED3;&#x70B9;&#x9519;&#x8BEF;&quot;</span>);
+        <span class="hljs-keyword">return</span> NULL;
+    }<span class="hljs-keyword">else</span>{
+        s = p-&gt;Next;    <span class="hljs-comment">// s &#x6307;&#x5411;&#x7B2C; i &#x4E2A;&#x7ED3;&#x70B9; </span>
+        p-&gt;Next = s-&gt;Next;  <span class="hljs-comment">//&#x4ECE;&#x94FE;&#x8868;&#x5220;&#x9664; </span>
+        <span class="hljs-built_in">free</span>(s);  <span class="hljs-comment">// &#x91CA;&#x653E;&#x88AB;&#x5220;&#x9664;&#x7ED3;&#x70B9; </span>
+        <span class="hljs-keyword">return</span> L;
+    }
+}
+
+<span class="hljs-comment">// &#x8F93;&#x51FA;&#x94FE;&#x8868;&#x5143;&#x7D20; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Print</span><span class="hljs-params">(List L)</span></span>{
+    List t;
+    <span class="hljs-keyword">int</span> flag = <span class="hljs-number">1</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5F53;&#x524D;&#x94FE;&#x8868;&#x4E3A;&#xFF1A;&quot;</span>);
+    <span class="hljs-keyword">for</span>(t = L;t;t =t-&gt;Next){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d  &quot;</span>,t-&gt;Data);
+        flag = <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">if</span>(flag)
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;NULL&quot;</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;\n&quot;</span>); 
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    L = MakeEmpty();
+    Print(L);
+    L = Insert(<span class="hljs-number">11</span>,<span class="hljs-number">1</span>,L);
+    L = Insert(<span class="hljs-number">25</span>,<span class="hljs-number">1</span>,L);
+    L = Insert(<span class="hljs-number">33</span>,<span class="hljs-number">2</span>,L);
+    L = Insert(<span class="hljs-number">77</span>,<span class="hljs-number">3</span>,L);
+    Print(L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5F53;&#x524D;&#x94FE;&#x8868;&#x957F;&#x5EA6;&#x4E3A;&#xFF1A;%d\n&quot;</span>,Length(L));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x6B64;&#x65F6;&#x94FE;&#x8868;&#x4E2D;&#x7B2C;&#x4E8C;&#x4E2A;&#x7ED3;&#x70B9;&#x7684;&#x503C;&#x662F;&#xFF1A;%d\n&quot;</span>,FindKth(<span class="hljs-number">2</span>,L)-&gt;Data);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x67E5;&#x627E;22&#x662F;&#x5426;&#x5728;&#x8BE5;&#x94FE;&#x8868;&#x4E2D;&#xFF1A;&quot;</span>);
+    <span class="hljs-keyword">if</span>(Find(<span class="hljs-number">22</span>,L))
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x662F;&#xFF01;\n&quot;</span>);
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5426;&#xFF01;\n&quot;</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x67E5;&#x627E;33&#x662F;&#x5426;&#x5728;&#x8BE5;&#x94FE;&#x8868;&#x4E2D;&#xFF1A;&quot;</span>);
+    <span class="hljs-keyword">if</span>(Find(<span class="hljs-number">33</span>,L))
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x662F;&#xFF01;\n&quot;</span>);
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5426;&#xFF01;\n&quot;</span>);
+    L = Delete(<span class="hljs-number">1</span>,L);
+    L = Delete(<span class="hljs-number">3</span>,L);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;----------&#x5220;&#x9664;&#x540E;-----\n&quot;</span>); 
+    Print(L);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="%E5%B9%BF%E4%B9%89%E8%A1%A8">&#x5E7F;&#x4E49;&#x8868;</h4>
+<p><img src="https://gitbook-daizhechen.oss-cn-hangzhou.aliyuncs.com/notesstack/4.43.16.png" alt=""></p>
+<ul>
+<li>&#x5E7F;&#x4E49;&#x8868;&#x662F;<strong>&#x7EBF;&#x6027;&#x8868;&#x7684;&#x63A8;&#x5E7F;</strong></li>
+<li>&#x5BF9;&#x4E8E;&#x7EBF;&#x6027;&#x8868;&#x800C;&#x8A00;&#xFF0C;n&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x57FA;&#x672C;&#x7684;<strong>&#x5355;&#x5143;&#x7D20;</strong></li>
+<li>&#x5E7F;&#x4E49;&#x8868;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x662F;&#x5355;&#x5143;&#x7D20;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x53E6;&#x4E00;&#x4E2A;<strong>&#x5E7F;&#x4E49;&#x8868;</strong></li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> GNode *GList;
+<span class="hljs-keyword">struct</span> GNode{
+  <span class="hljs-keyword">int</span> Tag;              <span class="hljs-comment">// &#x6807;&#x5FD7;&#x57DF;&#xFF1A;0&#x8868;&#x793A;&#x7ED3;&#x70B9;&#x662F;&#x5355;&#x5143;&#x7D20;&#xFF0C;1&#x8868;&#x793A;&#x7ED3;&#x70B9;&#x662F;&#x5E7F;&#x4E49;&#x57DF;</span>
+  <span class="hljs-keyword">union</span>{                <span class="hljs-comment">// &#x5B50;&#x8868;&#x6307;&#x9488;&#x57DF;Sublist&#x4E0E;&#x5355;&#x5143;&#x7D20;&#x6570;&#x636E;&#x57DF;Data&#x590D;&#x7528;&#xFF0C;&#x5373;&#x5171;&#x7528;&#x50A8;&#x5B58;&#x7A7A;&#x95F4;</span>
+    ElementType Data;
+    GList SubList;
+  }URegion;
+  GList Next;           <span class="hljs-comment">// &#x6307;&#x5411;&#x540E;&#x7EE7;&#x7ED3;&#x70B9;</span>
+}
+</code></pre>
+<h4 id="%E5%A4%9A%E9%87%8D%E9%93%BE%E8%A1%A8">&#x591A;&#x91CD;&#x94FE;&#x8868;</h4>
+<p>&#x591A;&#x91CD;&#x94FE;&#x8868;&#xFF1A;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x53EF;&#x80FD;&#x540C;&#x65F6;&#x96B6;&#x5C5E;&#x4E8E;&#x591A;&#x4E2A;&#x94FE;</p>
+<ul>
+<li>&#x591A;&#x91CD;&#x94FE;&#x8868;&#x4E2D;&#x7ED3;&#x70B9;&#x7684;<strong>&#x6307;&#x9488;&#x57DF;&#x4F1A;&#x6709;&#x591A;&#x4E2A;</strong>&#xFF0C;&#x5982;&#x524D;&#x9762;&#x4F8B;&#x5B50;&#x5305;&#x542B;&#x4E86;Next&#x548C;SubList&#x4E24;&#x4E2A;&#x6307;&#x9488;&#x57DF;&#xFF1B;</li>
+<li>&#x4F46;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x6307;&#x9488;&#x57DF;&#x7684;&#x94FE;&#x8868;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x591A;&#x91CD;&#x94FE;&#x8868;&#xFF0C;&#x6BD4;&#x5982;&#x5728;<strong>&#x53CC;&#x5411;&#x94FE;&#x8868;&#x4E0D;&#x662F;&#x591A;&#x91CD;&#x94FE;&#x8868;</strong></li>
+</ul>
+<p>&#x591A;&#x91CD;&#x94FE;&#x8868;&#x6709;&#x5E7F;&#x6CDB;&#x7684;&#x7528;&#x9014;&#xFF1A;&#x57FA;&#x672C;&#x4E0A;&#x5982;<strong>&#x6811;</strong>&#x3001;<strong>&#x56FE;</strong>&#x8FD9;&#x6837;&#x76F8;&#x5BF9;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;<strong>&#x90FD;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x591A;&#x91CD;&#x94FE;&#x8868;</strong>&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x5B58;&#x50A8;</p>
+<h2 id="%E5%A0%86%E6%A0%88">&#x5806;&#x6808;</h2>
+<h4 id="%E4%BB%80%E4%B9%88%E6%98%AF%E5%A0%86%E6%A0%88">&#x4EC0;&#x4E48;&#x662F;&#x5806;&#x6808;</h4>
+<p>&#x5806;&#x6808;&#xFF08;Stack&#xFF09;&#xFF1A;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x64CD;&#x4F5C;&#x7EA6;&#x675F;&#x7684;&#x7EBF;&#x6027;&#x8868;</p>
+<ul>
+<li>&#x53EA;&#x5728;&#x4E00;&#x7AEF;&#xFF08;&#x6808;&#x9876;&#xFF0C;Top&#xFF09;&#x505A;&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;</li>
+<li>&#x63D2;&#x5165;&#x6570;&#x636E;&#xFF1A;&#x5165;&#x6808;&#xFF08;Push&#xFF09;</li>
+<li>&#x5220;&#x9664;&#x6570;&#x636E;&#xFF1A;&#x51FA;&#x6808;&#xFF08;Pop&#xFF09;</li>
+<li>&#x540E;&#x5165;&#x5148;&#x51FA;&#xFF1A;Last In First Out&#xFF08;LIFO&#xFF09;</li>
+</ul>
+<h4 id="%E5%A0%86%E6%A0%88%E7%9A%84%E6%8A%BD%E8%B1%A1%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%8F%8F%E8%BF%B0">&#x5806;&#x6808;&#x7684;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x63CF;&#x8FF0;</h4>
+<ul>
+<li>&#x7C7B;&#x578B;&#x540D;&#x79F0;&#xFF1A;&#x5806;&#x6808;&#xFF08;Stack&#xFF09;</li>
+<li>&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x96C6;&#xFF1A;&#x4E00;&#x4E2A;&#x6709; 0 &#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6709;&#x7A77;&#x7EBF;&#x6027;&#x8868;</li>
+<li>&#x64CD;&#x4F5C;&#x96C6;&#xFF1A;&#x957F;&#x5EA6;&#x4E3A; MaxSize &#x7684;&#x5806;&#x6808; S &#x2208; Stack&#xFF0C;&#x5806;&#x6808;&#x5143;&#x7D20; item &#x2208; ElementType</li>
+</ul>
+<p>&#x5806;&#x6808;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x4E3B;&#x8981;&#x6709;&#xFF1A;</p>
+<ul>
+<li><code>Stack CreateStack(int MaxSize)</code>&#xFF1A;&#x751F;&#x6210;&#x7A7A;&#x5806;&#x6808;&#xFF0C;&#x5176;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x4E3A; MaxSize</li>
+<li><code>int IsFull(Stack S,int MaxSize)</code>&#xFF1A;&#x5224;&#x65AD;&#x5806;&#x6808; S &#x662F;&#x5426;&#x5DF2;&#x6EE1;</li>
+<li><code>void Push(Stack S,ElementType item)</code>&#xFF1A;&#x5C06;&#x5143;&#x7D20; item &#x538B;&#x5165;&#x5806;&#x6808;</li>
+<li><code>int IsEmpty(Stack S)</code>&#xFF1A;&#x5224;&#x65AD;&#x5806;&#x6808; S &#x662F;&#x5426;&#x4E3A;&#x7A7A;</li>
+<li><code>ElementType Pop(Stack S)</code>&#xFF1A;&#x5220;&#x9664;&#x5E76;&#x8FD4;&#x56DE;&#x6808;&#x9876;&#x5143;&#x7D20;</li>
+</ul>
+<h4 id="%E6%A0%88%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0">&#x6808;&#x7684;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x5B9E;&#x73B0;</h4>
+<ul>
+<li>&#x6808;&#x7684;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x901A;&#x5E38;&#x7531;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x548C;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x6808;&#x9876;&#x5143;&#x7D20;&#x4F4D;&#x7F6E;&#x7684;&#x53D8;&#x91CF;&#x7EC4;&#x6210;</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;malloc.h&gt; </span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> MaxSize 100   <span class="hljs-comment">// &#x5806;&#x6808;&#x5143;&#x7D20;&#x7684;&#x6700;&#x5927;&#x4E2A;&#x6570; </span></span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> ElementType; <span class="hljs-comment">// ElementType &#x6682;&#x65F6;&#x5B9A;&#x4E49;&#x4E3A; int &#x7C7B;&#x578B; </span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> SNode *Stack;
+<span class="hljs-keyword">struct</span> SNode{
+    ElementType Data[MaxSize];   <span class="hljs-comment">// &#x5B58;&#x50A8;&#x5806;&#x6808;&#x5143;&#x7D20;</span>
+    <span class="hljs-keyword">int</span> Top;  <span class="hljs-comment">// &#x8BB0;&#x5F55;&#x6808;&#x9876;&#x5143;&#x7D20;&#x4E0B;&#x6807; </span>
+}; 
+Stack S;
+
+<span class="hljs-function">Stack <span class="hljs-title">CreateStack</span><span class="hljs-params">()</span></span>;  <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x5806;&#x6808; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsFull</span><span class="hljs-params">(Stack S)</span></span>; <span class="hljs-comment">// &#x5224;&#x65AD;&#x5806;&#x6808;&#x662F;&#x5426;&#x5DF2;&#x6EE1; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Stack S)</span></span>;   <span class="hljs-comment">// &#x5224;&#x65AD;&#x5806;&#x6808;&#x662F;&#x5426;&#x4E3A;&#x7A7A; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Push</span><span class="hljs-params">(Stack S,ElementType item)</span></span>;   <span class="hljs-comment">// &#x5165;&#x6808; </span>
+<span class="hljs-function">ElementType <span class="hljs-title">Pop</span><span class="hljs-params">(Stack S)</span></span>;   <span class="hljs-comment">// &#x51FA;&#x6808; </span>
+
+<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x5806;&#x6808; </span>
+<span class="hljs-function">Stack <span class="hljs-title">CreateStack</span><span class="hljs-params">()</span></span>{
+    S = (Stack)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> SNode));
+    S-&gt;Top = -<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">return</span> S;
+} 
+
+<span class="hljs-comment">// &#x662F;&#x5426;&#x5DF2;&#x6EE1; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsFull</span><span class="hljs-params">(Stack S)</span></span>{
+    <span class="hljs-keyword">return</span> (S-&gt;Top == MaxSize-<span class="hljs-number">1</span>);
+}
+
+<span class="hljs-comment">// &#x662F;&#x5426;&#x4E3A;&#x7A7A; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Stack S)</span></span>{
+    <span class="hljs-keyword">return</span> (S-&gt;Top == -<span class="hljs-number">1</span>); 
+} 
+
+<span class="hljs-comment">// &#x5165;&#x6808; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Push</span><span class="hljs-params">(Stack S,ElementType item)</span></span>{
+    <span class="hljs-keyword">if</span>(IsFull(S)){   <span class="hljs-comment">// Top &#x4ECE; 0 &#x5F00;&#x59CB; </span>
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5806;&#x6808;&#x6EE1;&quot;</span>);
+        <span class="hljs-keyword">return</span>;
+    }<span class="hljs-keyword">else</span>{
+        S-&gt;Top++;   <span class="hljs-comment">// &#x6808;&#x9876;&#x5143;&#x7D20;&#x52A0;&#x4E00; </span>
+        S-&gt;Data[S-&gt;Top] = item;   <span class="hljs-comment">// &#x653E;&#x8FDB;&#x6700;&#x4E0A; </span>
+        <span class="hljs-keyword">return</span>;
+    }
+}
+
+<span class="hljs-comment">// &#x51FA;&#x6808;</span>
+<span class="hljs-function">ElementType <span class="hljs-title">Pop</span><span class="hljs-params">(Stack S)</span></span>{
+    <span class="hljs-keyword">if</span>(IsEmpty(S)){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5806;&#x6808;&#x7A7A;&quot;</span>);
+        <span class="hljs-keyword">return</span>;
+    }<span class="hljs-keyword">else</span>{
+        ElementType val = S-&gt;Data[S-&gt;Top];  <span class="hljs-comment">//&#x53D6;&#x51FA;&#x6700;&#x4E0A; </span>
+        S-&gt;Top--;  <span class="hljs-comment">// &#x6808;&#x9876;&#x5143;&#x7D20;&#x51CF;&#x4E00; </span>
+        <span class="hljs-keyword">return</span> val;
+    }
+}
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    S = CreateStack();
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;5&#x5165;&#x6808;\n&quot;</span>);
+    Push(S,<span class="hljs-number">5</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;7&#x5165;&#x6808;\n&quot;</span>);
+    Push(S,<span class="hljs-number">7</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;66&#x5165;&#x6808;\n&quot;</span>);
+    Push(S,<span class="hljs-number">66</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&#x51FA;&#x6808;\n&quot;</span>,Pop(S));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&#x51FA;&#x6808;\n&quot;</span>,Pop(S));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="%E6%A0%88%E7%9A%84%E9%93%BE%E8%A1%A8%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0">&#x6808;&#x7684;&#x94FE;&#x8868;&#x5B58;&#x50A8;&#x5B9E;&#x73B0;</h4>
+<ul>
+<li>&#x6808;&#x7684;&#x94FE;&#x5F0F;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x94FE;&#x8868;&#xFF0C;&#x53EB;&#x505A;&#x94FE;&#x6808;&#x3002;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x53EA;&#x80FD;&#x5728;&#x94FE;&#x6808;&#x7684;&#x6808;&#x9876;&#x8FDB;&#x884C;</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;malloc.h&gt;</span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> ElementType;
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> SNode *Stack;
+<span class="hljs-keyword">struct</span> SNode{
+    ElementType Data;
+    Stack Next;
+};
+
+
+<span class="hljs-function">Stack <span class="hljs-title">CreateStack</span><span class="hljs-params">()</span></span>;  <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x94FE;&#x6808; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Stack S)</span></span>;  <span class="hljs-comment">// &#x5224;&#x65AD;&#x94FE;&#x6808;&#x662F;&#x5426;&#x4E3A;&#x7A7A; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Push</span><span class="hljs-params">(Stack S,ElementType item)</span></span>;  <span class="hljs-comment">// &#x5165;&#x6808; </span>
+<span class="hljs-function">ElementType <span class="hljs-title">Pop</span><span class="hljs-params">(Stack S)</span></span>;  <span class="hljs-comment">// &#x51FA;&#x6808;</span>
+
+
+<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316; </span>
+<span class="hljs-function">Stack <span class="hljs-title">CreateStack</span><span class="hljs-params">()</span></span>{
+    Stack S;
+    S = (Stack)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> SNode));
+    S-&gt;Next = NULL;
+    <span class="hljs-keyword">return</span> S;
+}
+
+<span class="hljs-comment">// &#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x7A7A; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Stack S)</span></span>{
+    <span class="hljs-keyword">return</span> (S-&gt;Next == NULL);
+}
+
+<span class="hljs-comment">// &#x5165;&#x6808;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Push</span><span class="hljs-params">(Stack S,ElementType item)</span></span>{
+    Stack tmp;
+    tmp = (Stack)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> SNode));
+    tmp-&gt;Data = item;
+    <span class="hljs-comment">// &#x94FE;&#x6808;&#x6808;&#x9876;&#x5143;&#x7D20;&#x662F;&#x94FE;&#x8868;&#x5934;&#x7ED3;&#x70B9;&#xFF0C;&#x65B0;&#x5165;&#x6808;&#x7684;&#x94FE;&#x8868;&#x5728;&#x6808;&#x9876;&#x5143;&#x7D20;&#x540E;&#x9762; </span>
+    tmp-&gt;Next = S-&gt;Next;   
+    S-&gt;Next = tmp;
+} 
+
+<span class="hljs-comment">// &#x51FA;&#x6808;</span>
+<span class="hljs-function">ElementType <span class="hljs-title">Pop</span><span class="hljs-params">(Stack S)</span></span>{
+    Stack First;
+    ElementType TopVal;
+    <span class="hljs-keyword">if</span>(IsEmpty(S)){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5806;&#x6808;&#x7A7A;&quot;</span>);
+        <span class="hljs-keyword">return</span>;
+    }<span class="hljs-keyword">else</span>{
+        First = S-&gt;Next;   <span class="hljs-comment">// &#x51FA;&#x6808;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5728;&#x6808;&#x9876;&#x5143;&#x7D20;&#x540E;&#x9762; </span>
+        S-&gt;Next = First-&gt;Next;  <span class="hljs-comment">//&#x628A;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4ECE;&#x94FE;&#x6808;&#x5220;&#x9664; </span>
+        TopVal = First-&gt;Data;   <span class="hljs-comment">// &#x53D6;&#x51FA;&#x88AB;&#x5220;&#x9664;&#x7ED3;&#x70B9;&#x7684;&#x503C; </span>
+        <span class="hljs-built_in">free</span>(First);  <span class="hljs-comment">// &#x91CA;&#x653E;&#x7A7A;&#x95F4; </span>
+        <span class="hljs-keyword">return</span> TopVal;
+    }
+} 
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    Stack S;
+    S = CreateStack();
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;5&#x5165;&#x6808;\n&quot;</span>);
+    Push(S,<span class="hljs-number">5</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;7&#x5165;&#x6808;\n&quot;</span>);
+    Push(S,<span class="hljs-number">7</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;66&#x5165;&#x6808;\n&quot;</span>);
+    Push(S,<span class="hljs-number">66</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&#x51FA;&#x6808;\n&quot;</span>,Pop(S));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&#x51FA;&#x6808;\n&quot;</span>,Pop(S));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="%E4%B8%AD%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%A6%82%E4%BD%95%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%90%8E%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F">&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5982;&#x4F55;&#x8F6C;&#x6362;&#x4E3A;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;</h4>
+<p>&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x8BFB;&#x53D6;<strong>&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;</strong>&#xFF0C;&#x5BF9;&#x4E0D;&#x540C;&#x5BF9;&#x8C61;&#x6309;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x5904;&#x7406;&#x3002;</p>
+<ul>
+<li>&#x8FD0;&#x7B97;&#x6570;&#xFF1A;&#x76F4;&#x63A5;&#x8F93;&#x51FA;</li>
+<li>&#x5DE6;&#x62EC;&#x53F7;&#xFF1A;&#x538B;&#x5165;&#x5806;&#x6808;</li>
+<li>&#x53F3;&#x62EC;&#x53F7;&#xFF1A;&#x5C06;<strong>&#x6808;&#x9876;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x5F39;&#x51FA;</strong>&#x5E76;&#xFF0C;<strong>&#x76F4;&#x5230;&#x9047;&#x5230;&#x5DE6;&#x62EC;&#x53F7;</strong>&#xFF08;&#x51FA;&#x6808;&#xFF0C;&#x4E0D;&#x8F93;&#x51FA;&#xFF09;</li>
+<li>&#x8FD0;&#x7B97;&#x7B26;&#xFF1A;<ul>
+<li>&#x82E5;<strong>&#x4F18;&#x5148;&#x7EA7;&#x5927;&#x4E8E;&#x6808;&#x9876;&#x8FD0;&#x7B97;&#x7B26;</strong>&#x65F6;&#xFF0C;&#x5219;&#x628A;&#x5B83;<strong>&#x538B;&#x6808;</strong>&#xFF1B;</li>
+<li>&#x82E5;<strong>&#x4F18;&#x5148;&#x7EA7;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x6808;&#x9876;&#x8FD0;&#x7B97;&#x7B26;</strong>&#x65F6;&#xFF0C;&#x5C06;<strong>&#x6808;&#x9876;&#x8FD0;&#x7B97;&#x7B26;&#x5F39;&#x51FA;&#x5E76;&#x8F93;&#x51FA;</strong>&#xFF1B;&#x518D;&#x6BD4;&#x8F83;&#x65B0;&#x7684;&#x6808;&#x9876;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x76F4;&#x5230;&#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x5927;&#x4E8E;&#x6808;&#x9876;&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;&#x4E3A;&#x6B62;&#xFF0C;&#x7136;&#x540E;<strong>&#x5C06;&#x8BE5;&#x8FD0;&#x7B97;&#x7B26;&#x538B;&#x6808;</strong>&#xFF1B;</li>
+</ul>
+</li>
+<li>&#x82E5;&#x5404;&#x5BF9;&#x8C61;&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#xFF0C;&#x5219;&#x628A;&#x5806;&#x6808;&#x4E2D;&#x5B58;&#x7559;&#x7684;<strong>&#x8FD0;&#x7B97;&#x7B26;&#x4E00;&#x5E76;&#x8F93;&#x51FA;</strong></li>
+</ul>
+<p><img src="https://gitbook-daizhechen.oss-cn-hangzhou.aliyuncs.com/notesstack/6.10.13.png" alt=""></p>
+<h4 id="%E5%A0%86%E6%A0%88%E7%9A%84%E5%85%B6%E4%BB%96%E5%BA%94%E7%94%A8">&#x5806;&#x6808;&#x7684;&#x5176;&#x4ED6;&#x5E94;&#x7528;</h4>
+<ul>
+<li>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x53CA;&#x9012;&#x5F52;&#x5B9E;&#x73B0;</li>
+<li>&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x641C;&#x7D22;</li>
+<li>&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;</li>
+<li>...</li>
+</ul>
+<h2 id="%E5%88%97%E9%98%9F">&#x5217;&#x961F;</h2>
+<h4 id="%E4%BB%80%E4%B9%88%E6%98%AF%E9%98%9F%E5%88%97">&#x4EC0;&#x4E48;&#x662F;&#x961F;&#x5217;</h4>
+<p>&#x961F;&#x5217;&#xFF08;Queue&#xFF09;&#xFF1A;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x64CD;&#x4F5C;&#x7EA6;&#x675F;&#x7684;&#x7EBF;&#x6027;&#x8868;</p>
+<ul>
+<li>&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF1A;&#x53EA;&#x80FD;&#x5728;&#x4E00;&#x7AEF;&#xFF08;front&#xFF09;&#x63D2;&#x5165;&#xFF0C;&#x800C;&#x5728;&#x53E6;&#x4E00;&#x7AEF;&#xFF08;rear&#xFF09;&#x5220;&#x9664;</li>
+<li>&#x6570;&#x636E;&#x63D2;&#x5165;&#xFF1A;&#x5165;&#x961F;&#x5217;&#xFF08;AddQ&#xFF09;</li>
+<li>&#x6570;&#x636E;&#x5220;&#x9664;&#xFF1A;&#x51FA;&#x961F;&#x5217;&#xFF08;DeleteQ&#xFF09;</li>
+<li>&#x5148;&#x8FDB;&#x5148;&#x51FA;&#xFF1A;FIFO</li>
+</ul>
+<p>&#x961F;&#x5217;&#x7684;&#x62BD;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x63CF;&#x8FF0;</p>
+<ul>
+<li>&#x7C7B;&#x578B;&#x540D;&#x79F0;&#xFF1A;&#x961F;&#x5217;&#xFF08;Queue&#xFF09;</li>
+<li>&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x96C6;&#xFF1A;&#x4E00;&#x4E2A;&#x6709; 0 &#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6709;&#x7A77;&#x7EBF;&#x6027;&#x8868;</li>
+<li>&#x64CD;&#x4F5C;&#x96C6;&#xFF1A;&#x957F;&#x5EA6;&#x4E3A; MaxSize &#x7684;&#x961F;&#x5217; Q&#x2208;Queue&#xFF0C;&#x961F;&#x5217;&#x5143;&#x7D20; item&#x2208;ElementType</li>
+</ul>
+<p>&#x961F;&#x5217;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x4E3B;&#x8981;&#x6709;&#xFF1A;</p>
+<ul>
+<li><code>Queue CreateQueue(int MaxSize)</code>&#xFF1A;&#x751F;&#x6210;&#x957F;&#x5EA6;&#x4E3A; MaxSize &#x7684;&#x7A7A;&#x961F;&#x5217;</li>
+<li><code>int IsFull(Queue Q)</code>&#xFF1A;&#x5224;&#x65AD;&#x961F;&#x5217; Q &#x662F;&#x5DF2;&#x6EE1;</li>
+<li><code>void AddQ(Queue Q,ElementType item)</code>&#xFF1A;&#x5C06;&#x6570;&#x636E;&#x5143;&#x7D20; item &#x63D2;&#x5165;&#x961F;&#x5217; Q &#x4E2D;</li>
+<li><code>int IsEmpty(Queue Q)</code>&#xFF1A;&#x5224;&#x65AD;&#x961F;&#x5217; Q &#x662F;&#x5426;&#x4E3A;&#x7A7A;</li>
+<li><code>ElementType DeleteQ(Queue Q)</code>&#xFF1A;&#x5C06;&#x961F;&#x5934;&#x6570;&#x636E;&#x5143;&#x7D20;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;&#x5E76;&#x8FD4;&#x56DE;</li>
+</ul>
+<h4 id="%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0">&#x5FAA;&#x73AF;&#x961F;&#x5217;&#x7684;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x5B9E;&#x73B0;</h4>
+<ul>
+<li>&#x961F;&#x5217;&#x7684;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x901A;&#x5E38;&#x7531;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x6570;&#x7EC4;&#x548C;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x961F;&#x5217;&#x5934;&#x5143;&#x7D20;&#x4F4D;&#x7F6E;&#x7684;&#x53D8;&#x91CF; front &#x4EE5;&#x53CA;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;&#x961F;&#x5217;&#x5C3E;&#x5143;&#x7D20;&#x4F4D;&#x7F6E;&#x7684;&#x53D8;&#x91CF; rear &#x7EC4;&#x6210;&#xFF0C;&#x5176;&#x4E2D; front &#x6307;&#x5411;&#x6574;&#x4E2A;&#x961F;&#x5217;&#x7684;&#x5934;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x518D;&#x524D;&#x4E00;&#x4E2A;&#xFF0C;rear &#x6307;&#x5411;&#x7684;&#x662F;&#x6574;&#x4E2A;&#x961F;&#x5217;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x4ECE; rear &#x5165;&#x961F;&#xFF0C;&#x4ECE; front &#x51FA;&#x961F;&#xFF0C;&#x4E14;&#x4EC5;&#x4F7F;&#x7528; n-1 &#x4E2A;&#x6570;&#x7EC4;&#x7A7A;&#x95F4;</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;malloc.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> MaxSize 100</span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> ElementType;
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> QNode *Queue;
+<span class="hljs-keyword">struct</span> QNode{
+    ElementType Data[MaxSize];
+    <span class="hljs-keyword">int</span> front;   <span class="hljs-comment">// &#x8BB0;&#x5F55;&#x961F;&#x5934; </span>
+    <span class="hljs-keyword">int</span> rear;    <span class="hljs-comment">// &#x8BB0;&#x5F55;&#x961F;&#x5C3E; </span>
+};
+
+<span class="hljs-function">Queue <span class="hljs-title">CreateQueue</span><span class="hljs-params">()</span></span>;  <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x961F;&#x5217; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">AddQ</span><span class="hljs-params">(Queue Q,ElementType item)</span></span>;  <span class="hljs-comment">//  &#x5165;&#x961F;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsFull</span><span class="hljs-params">(Queue Q)</span></span>; <span class="hljs-comment">// &#x5224;&#x65AD;&#x961F;&#x5217;&#x662F;&#x5426;&#x5DF2;&#x6EE1; </span>
+<span class="hljs-function">ElementType <span class="hljs-title">DeleteQ</span><span class="hljs-params">(Queue Q)</span></span>;  <span class="hljs-comment">// &#x51FA;&#x961F; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Queue Q)</span></span>; <span class="hljs-comment">// &#x5224;&#x65AD;&#x961F;&#x5217;&#x662F;&#x5426;&#x4E3A;&#x7A7A; </span>
+
+<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316; </span>
+<span class="hljs-function">Queue <span class="hljs-title">CreateQueue</span><span class="hljs-params">()</span></span>{
+    Queue Q;
+    Q = (Queue)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> QNode));
+    Q-&gt;front = -<span class="hljs-number">1</span>;
+    Q-&gt;rear = -<span class="hljs-number">1</span>;
+    <span class="hljs-keyword">return</span> Q;
+} 
+
+<span class="hljs-comment">// &#x5224;&#x65AD;&#x961F;&#x5217;&#x662F;&#x5426;&#x5DF2;&#x6EE1;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsFull</span><span class="hljs-params">(Queue Q)</span></span>{
+     <span class="hljs-keyword">return</span> ((Q-&gt;rear+<span class="hljs-number">1</span>) % MaxSize == Q-&gt;front);
+}
+
+<span class="hljs-comment">// &#x5165;&#x961F; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">AddQ</span><span class="hljs-params">(Queue Q,ElementType item)</span></span>{
+    <span class="hljs-keyword">if</span>(IsFull(Q)){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x961F;&#x5217;&#x6EE1;&quot;</span>);
+        <span class="hljs-keyword">return</span>;
+    }<span class="hljs-keyword">else</span>{ 
+        Q-&gt;rear = (Q-&gt;rear+<span class="hljs-number">1</span>) % MaxSize;
+        Q-&gt;Data[Q-&gt;rear] = item; 
+    }
+}
+
+<span class="hljs-comment">//&#x5224;&#x65AD;&#x961F;&#x5217;&#x662F;&#x5426;&#x4E3A;&#x7A7A;</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Queue Q)</span></span>{
+    <span class="hljs-keyword">return</span> (Q-&gt;front == Q-&gt;rear);
+}
+
+<span class="hljs-comment">// &#x51FA;&#x961F;</span>
+<span class="hljs-function">ElementType <span class="hljs-title">DeleteQ</span><span class="hljs-params">(Queue Q)</span></span>{
+    <span class="hljs-keyword">if</span>(IsEmpty(Q)){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x961F;&#x5217;&#x7A7A;&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }<span class="hljs-keyword">else</span>{
+        Q-&gt;front = (Q-&gt;front+<span class="hljs-number">1</span>) % MaxSize;
+        <span class="hljs-keyword">return</span> Q-&gt;Data[Q-&gt;front];
+    }
+} 
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    Queue Q;
+    Q = CreateQueue();
+    AddQ(Q,<span class="hljs-number">3</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;3&#x5165;&#x961F;\n&quot;</span>);
+    AddQ(Q,<span class="hljs-number">5</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;5&#x5165;&#x961F;\n&quot;</span>);
+    AddQ(Q,<span class="hljs-number">11</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;11&#x5165;&#x961F;\n&quot;</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&#x51FA;&#x961F;\n&quot;</span>,DeleteQ(Q));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&#x51FA;&#x961F;\n&quot;</span>,DeleteQ(Q));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="%E9%98%9F%E5%88%97%E7%9A%84%E9%93%BE%E5%BC%8F%E5%AD%98%E5%82%A8%E5%AE%9E%E7%8E%B0">&#x961F;&#x5217;&#x7684;&#x94FE;&#x5F0F;&#x5B58;&#x50A8;&#x5B9E;&#x73B0;</h4>
+<ul>
+<li>&#x961F;&#x5217;&#x7684;&#x94FE;&#x5F0F;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x5355;&#x94FE;&#x8868;&#x5B9E;&#x73B0;&#x3002;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x5206;&#x522B;&#x5728;&#x94FE;&#x8868;&#x7684;&#x4E24;&#x5934;&#x8FDB;&#x884C;&#xFF0C;front &#x5728;&#x94FE;&#x8868;&#x5934;&#xFF0C;rear &#x5728;&#x94FE;&#x8868;&#x5C3E;&#xFF0C;&#x4ECE; rear &#x5165;&#x961F;&#xFF0C;&#x4ECE; front &#x51FA;&#x961F;</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;stdio.h&gt;</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">include</span>&lt;malloc.h&gt;</span>
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> ElementType;
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> QNode *Queue;
+<span class="hljs-keyword">struct</span> Node{
+    ElementType Data;
+    <span class="hljs-keyword">struct</span> Node *Next;
+};
+<span class="hljs-keyword">struct</span> QNode{
+    <span class="hljs-keyword">struct</span> Node *rear;    <span class="hljs-comment">// &#x6307;&#x5411;&#x961F;&#x5C3E;&#x7ED3;&#x70B9; </span>
+    <span class="hljs-keyword">struct</span> Node *front;   <span class="hljs-comment">// &#x6307;&#x5411;&#x961F;&#x5934;&#x7ED3;&#x70B9; </span>
+};
+
+<span class="hljs-function">Queue <span class="hljs-title">CreateQueue</span><span class="hljs-params">()</span></span>;  <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x961F;&#x5217; </span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">AddQ</span><span class="hljs-params">(Queue Q,ElementType item)</span></span>;  <span class="hljs-comment">//  &#x5165;&#x961F;</span>
+<span class="hljs-function">ElementType <span class="hljs-title">DeleteQ</span><span class="hljs-params">(Queue Q)</span></span>;  <span class="hljs-comment">// &#x51FA;&#x961F; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Queue Q)</span></span>; <span class="hljs-comment">// &#x5224;&#x65AD;&#x961F;&#x5217;&#x662F;&#x5426;&#x4E3A;&#x7A7A; </span>
+
+<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316; </span>
+<span class="hljs-function">Queue <span class="hljs-title">CreateQueue</span><span class="hljs-params">()</span></span>{
+    Queue Q;
+    Q = (Queue)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> QNode));
+    Q-&gt;front = NULL;
+    Q-&gt;rear = NULL;
+    <span class="hljs-keyword">return</span> Q;
+}
+
+<span class="hljs-comment">// &#x662F;&#x5426;&#x4E3A;&#x7A7A; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">IsEmpty</span><span class="hljs-params">(Queue Q)</span></span>{
+    <span class="hljs-keyword">return</span> (Q-&gt;front == NULL);
+}
+
+<span class="hljs-comment">// &#x5165;&#x961F;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">AddQ</span><span class="hljs-params">(Queue Q,ElementType item)</span></span>{
+    <span class="hljs-keyword">struct</span> Node *node;
+    node = (<span class="hljs-keyword">struct</span> Node *)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> Node));
+    node-&gt;Data = item;
+    node-&gt;Next = NULL;
+    <span class="hljs-keyword">if</span>(Q-&gt;rear==NULL){  <span class="hljs-comment">//&#x6B64;&#x65F6;&#x961F;&#x5217;&#x7A7A; </span>
+        Q-&gt;rear = node;
+        Q-&gt;front = node;
+    }<span class="hljs-keyword">else</span>{ <span class="hljs-comment">//&#x4E0D;&#x4E3A;&#x7A7A; </span>
+        Q-&gt;rear-&gt;Next = node;  <span class="hljs-comment">// &#x5C06;&#x7ED3;&#x70B9;&#x5165;&#x961F; </span>
+        Q-&gt;rear = node;   <span class="hljs-comment">// rear &#x4ECD;&#x7136;&#x4FDD;&#x6301;&#x6700;&#x540E; </span>
+    }
+} 
+
+<span class="hljs-comment">// &#x51FA;&#x961F;</span>
+<span class="hljs-function">ElementType <span class="hljs-title">DeleteQ</span><span class="hljs-params">(Queue Q)</span></span>{
+    <span class="hljs-keyword">struct</span> Node *FrontCell;
+    ElementType FrontElem;
+    <span class="hljs-keyword">if</span>(IsEmpty(Q)){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x961F;&#x5217;&#x7A7A;&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    }
+    FrontCell = Q-&gt;front;
+    <span class="hljs-keyword">if</span>(Q-&gt;front == Q-&gt;rear){ <span class="hljs-comment">// &#x961F;&#x5217;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20; </span>
+        Q-&gt;front = Q-&gt;rear = NULL; 
+    }<span class="hljs-keyword">else</span>{
+        Q-&gt;front = Q-&gt;front-&gt;Next;
+    }
+    FrontElem = FrontCell-&gt;Data;
+    <span class="hljs-built_in">free</span>(FrontCell);
+    <span class="hljs-keyword">return</span> FrontElem;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    Queue Q;
+    Q = CreateQueue();
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5165;&#x961F;5\n&quot;</span>); 
+    AddQ(Q,<span class="hljs-number">5</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5165;&#x961F;4\n&quot;</span>); 
+    AddQ(Q,<span class="hljs-number">4</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x5165;&#x961F;4\n&quot;</span>); 
+    AddQ(Q,<span class="hljs-number">3</span>);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x51FA;&#x961F;%d\n&quot;</span>,DeleteQ(Q));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x51FA;&#x961F;%d\n&quot;</span>,DeleteQ(Q));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#x51FA;&#x961F;%d\n&quot;</span>,DeleteQ(Q));
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>,DeleteQ(Q));
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h4 id="%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B%EF%BC%9A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%8A%A0%E6%B3%95%E8%BF%90%E7%AE%97">&#x5E94;&#x7528;&#x5B9E;&#x4F8B;&#xFF1A;&#x591A;&#x9879;&#x5F0F;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;</h4>
+<pre><code class="lang-c"><span class="hljs-function">Polynomial <span class="hljs-title">PolyAdd</span><span class="hljs-params">(Polynomial P1, Polynomial P2)</span>
+</span>{
+  Polynomial front, rear, temp;
+  <span class="hljs-keyword">int</span> sum;
+  rear =(Polynomial)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> PolyNode));  <span class="hljs-comment">// &#x4E3A;&#x65B9;&#x4FBF;&#x8868;&#x5934;&#x63D2;&#x5165;&#xFF0C;&#x5148;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x7A7A;&#x7ED3;&#x70B9;&#x4F5C;&#x4E3A;&#x7ED3;&#x679C;&#x591A;&#x9879;&#x5F0F;&#x94FE;&#x8868;&#x5934;</span>
+  front = rear; <span class="hljs-comment">//&#x7531;front&#x8BB0;&#x5F55;&#x591A;&#x9879;&#x5F0F;&#x94FE;&#x8868;&#x5934;&#x7ED3;&#x70B9;</span>
+  <span class="hljs-keyword">while</span>(P1 &amp;&amp; P2) <span class="hljs-comment">//&#x5F53;&#x4E24;&#x4E2A;&#x591A;&#x9879;&#x5F0F;&#x90FD;&#x6709;&#x975E;&#x96F6;&#x9879;&#x5F85;&#x5904;&#x7406;&#x65F6;</span>
+    <span class="hljs-keyword">switch</span>(Compare(P1-&gt;expon, P2-&gt;expon))
+    {
+      <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:   <span class="hljs-comment">// P1&#x4E2D;&#x7684;&#x6570;&#x636E;&#x9879;&#x6307;&#x6570;&#x8F83;&#x5927;</span>
+            Attach(P1-&gt;coef, P1-&gt;expon, &amp;rear);
+            P1 = P1-&gt;link;
+            <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">case</span> -<span class="hljs-number">1</span>:  <span class="hljs-comment">// P2&#x4E2D;&#x7684;&#x6570;&#x636E;&#x9879;&#x6307;&#x6570;&#x8F83;&#x5927;</span>
+            Attach(P2-&gt;coef, P2-&gt;expon, &amp;rear);
+            P2 = P2-&gt;link;
+            <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:  <span class="hljs-comment">// &#x4E24;&#x6570;&#x636E;&#x9879;&#x6307;&#x6570;&#x76F8;&#x7B49;</span>
+            sum = P1-&gt;coef + P2-&gt;coef;
+            <span class="hljs-keyword">if</span>(sum) Attach(sum, P1-&gt;expon, &amp;rear);  <span class="hljs-comment">// &#x5224;&#x65AD;&#x7CFB;&#x6570;&#x548C;&#x662F;&#x5426;&#x4E3A;0</span>
+            P1 = P1-&gt;link;
+            P2 = P2-&gt;link;
+            <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-comment">// &#x5C06;&#x672A;&#x5904;&#x7406;&#x5B8C;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x591A;&#x9879;&#x5F0F;&#x7684;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4F9D;&#x6B21;&#x590D;&#x5236;&#x5230;&#x7ED3;&#x679C;&#x591A;&#x9879;&#x5F0F;&#x4E2D;&#x53BB;</span>
+    <span class="hljs-keyword">for</span>(;P1;P1 = P1-&gt;link)Attach(P1-&gt;coef,P1-&gt;expon,&amp;rear);
+    <span class="hljs-keyword">for</span>(;P2;P2 = P2-&gt;link)Attach(P2-&gt;coef,P2-&gt;expon,&amp;rear);
+    rear-&gt;link = NULL;
+    temp = front;
+    front = front-&gt;link; <span class="hljs-comment">//&#x4EE4;front&#x6307;&#x5411;&#x7ED3;&#x679C;&#x591A;&#x9879;&#x5F0F;&#x7B2C;&#x4E00;&#x4E2A;&#x975E;&#x96F6;&#x9879;</span>
+    <span class="hljs-built_in">free</span>(temp); <span class="hljs-comment">// &#x91CA;&#x653E;&#x4E34;&#x65F6;&#x7A7A;&#x8868;&#x5934;&#x7ED3;&#x70B9;</span>
+    <span class="hljs-keyword">return</span> front;
+}
+</code></pre>
+<h4 id="attach%E5%87%BD%E6%95%B0">Attach&#x51FD;&#x6570;</h4>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Attach</span><span class="hljs-params">(<span class="hljs-keyword">int</span> c, <span class="hljs-keyword">int</span> e, Polynomial *pRear)</span>
+</span>{
+  <span class="hljs-comment">// &#x7531;&#x4E8E;&#x5728;&#x672C;&#x51FD;&#x6570;&#x4E2D;&#x9700;&#x8981;&#x6539;&#x53D8;&#x5F53;&#x524D;&#x7ED3;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x5C3E;&#x9879;&#x6307;&#x9488;&#x7684;&#x503C;&#xFF0C;</span>
+  <span class="hljs-comment">// &#x6240;&#x4EE5;&#x51FD;&#x6570;&#x4F20;&#x9012;&#x8FDB;&#x6765;&#x7684;&#x662F;&#x7ED3;&#x70B9;&#x6307;&#x9488;&#x7684;&#x5730;&#x5740;&#xFF0C; *pRear&#x6307;&#x5411;&#x5C3E;&#x9879;</span>
+  Polynomial P;
+
+  P =(Polynomial)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> PolyNode));  <span class="hljs-comment">//&#x7533;&#x8BF7;&#x65B0;&#x7ED3;&#x70B9;</span>
+  P-&gt;coef = c;   <span class="hljs-comment">// &#x5BF9;&#x65B0;&#x7ED3;&#x70B9;&#x8D4B;&#x503C;</span>
+  P-&gt;expon = e;
+  P-&gt;link = Null;
+  <span class="hljs-comment">// &#x5C06;P&#x6307;&#x5411;&#x7684;&#x65B0;&#x7ED3;&#x70B9;&#x63D2;&#x5165;&#x5230;&#x5F53;&#x524D;&#x7ED3;&#x679C;&#x8868;&#x8FBE;&#x5F0F;&#x5C3E;&#x9879;&#x7684;&#x540E;&#x9762;</span>
+  &#xFF08;*pRear)-&gt;link = P;
+  *pRear = P; <span class="hljs-comment">// &#x4FEE;&#x6539;pRear&#x7684;&#x503C;</span>
+}
+</code></pre>
 
                     
                     </section>
