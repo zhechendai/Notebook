@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-20 16:54:58
+ * @LastEditTime: 2020-07-20 22:05:01
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 INTRO
@@ -95,6 +95,7 @@ Markdown学习笔记[*](markdown_study_notes/abstr.html)
 
 * [基本概念](data_structure/ch1.html)
 * [线性结构](data_structure/ch2.html)
+* [树（上）](data_structure/ch3.html)
   
 高等数学学习笔记
 ----

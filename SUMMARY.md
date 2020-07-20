@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-20 16:54:47
+ * @LastEditTime: 2020-07-20 22:04:49
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 # Summary
@@ -51,6 +51,7 @@
 * [数据结构](data_structure/abstr.md)
     - [基本概念](data_structure/ch1.md) 
     - [线性结构](data_structure/ch2.md)
+    - [树（上）](data_structure/ch3.md)
 
 * 高等数学学习笔记
 

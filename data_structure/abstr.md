@@ -2,7 +2,7 @@
  * @Date: 2020-07-15 15:32:00
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-15 15:37:27
+ * @LastEditTime: 2020-07-20 20:58:50
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 Introduction
@@ -15,6 +15,6 @@ I'm studying Data Structure by following the [ZJU MOOC](https://www.icourse163.o
 1\.[基本概念](ch1.html)  
 2\.[线性结构](ch2.html)  
 3\.[树（上）](ch3.html)  
-4\.[数（中）](ch4.html)  
-5\.[数（下）](ch5.html)  
+4\.[树（中）](ch4.html)  
+5\.[树（下）](ch5.html)  
 6\.[图（上）](ch6.html)  
