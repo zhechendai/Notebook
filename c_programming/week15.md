@@ -2,7 +2,7 @@
  * @Date: 2020-07-20 14:52:43
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-20 16:52:37
+ * @LastEditTime: 2020-07-20 20:04:51
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 
@@ -123,4 +123,4 @@ if( fp ){
 位运算
 ----
 
-详情见[PDF](15.2.pdf)
+详情见[PDF](https://notes.daizhechen.com/file/c_15.2.pdf)
