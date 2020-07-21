@@ -2,7 +2,7 @@
  * @Date: 2020-07-04 17:40:56
  * @Author: Dai Zhechen
  * @Github: https://github.com/zhechendai
- * @LastEditTime: 2020-07-20 22:05:01
+ * @LastEditTime: 2020-07-21 16:43:15
  * @Copyright ©️ 2020 Dai Zhechen. All Rights Reserved.
 --> 
 INTRO
@@ -86,6 +86,7 @@ Markdown学习笔记[*](markdown_study_notes/abstr.html)
 * [程序结构](c_programming/week13.html)
 * [交互图形设计](c_programming/week14.html)
 * [文件](c_programming/week15.html)
+* [搜索与排序](c_programming/week16.html)
 
 
 数据结构
